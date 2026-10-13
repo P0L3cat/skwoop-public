@@ -1,0 +1,10 @@
+menu "Skwoop wake word"
+
+    config SKWOOP_WAKE_KEYWORD
+        string "Preferred WakeNet keyword (model wn9_<keyword> in the model partition)"
+        default "heyskwoop"
+        help
+            Put the trained model under models/wakenet/wn9_<keyword>/; the build
+            packs it into the model partition. Missing model: "Hi ESP" is used.
+
+endmenu

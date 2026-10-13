@@ -1,0 +1,7 @@
+menu "Skwoop timers"
+
+    config SKWOOP_TZ
+        string "POSIX TZ for alarms and the clock"
+        default "CST6CDT,M3.2.0,M11.1.0"
+
+endmenu

@@ -1,0 +1,15 @@
+menu "Skwoop smart home (MQTT)"
+
+    config SKWOOP_MQTT_URL
+        string "Broker URL (mqtt://host[:port] or mqtts://host[:port]); empty disables MQTT"
+        default ""
+
+    config SKWOOP_MQTT_USER
+        string "Broker username (password: key slot \"mqtt\" in encrypted NVS)"
+        default ""
+
+    config SKWOOP_LIGHTS_TOPIC
+        string "Topic for the light commands (payload ON / OFF)"
+        default "skwoop/lights/set"
+
+endmenu

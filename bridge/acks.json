@@ -1,0 +1,1042 @@
+{
+ "_about": [
+  "Skwoop's spoken action acknowledgements. Each (kind, mood) bucket has its own lines, worded for that mood.",
+  "Moods are the approved Skwoop mood loops (skwoop-2d/loops) that can speak: idle (= the tone classifier's neutral), happy, sad, sleep, thinking, alert.",
+  "A bucket is a list of lines, or {\"tags\": [...], \"takes\": n, \"lines\": [...]}. 'tags' default to the top-level ones for that mood.",
+  "Each line is recorded 'takes' times (default: top-level takes), each take with a different tag from the bucket, chosen by the line's text so edits don't reshuffle other lines.",
+  "Tags are Eleven v4 audio tags, sent in front of the line on ElevenLabs renders only. Sleep tags are cute-tired ([yawns] is a reaction tag like the documented [laughs]/[sighs]); no hum openers (Mm, Mmhm, Ooh) and no soft/hushed/breathy tags, which made the sleepy lines sound like moaning.",
+  "'default' is the kind's mood when the request gives none and the pod has no fresh mood this kind has a bucket for.",
+  "Rendered once with ElevenLabs (render_acks.py, deleted Oct 6 2026; see git history before the an earlier revision round)."
+ ],
+ "takes": 3,
+ "tags": {
+  "happy": [
+   "[cheerfully]",
+   "[brightly]",
+   "[warmly, with a smile]"
+  ],
+  "idle": [
+   "[warmly]",
+   "[softly]",
+   "[calmly]"
+  ],
+  "sleep": [
+   "[sleepily, with a big yawn]",
+   "[tired, slow]",
+   "[yawns]"
+  ],
+  "alert": [
+   "[briskly]",
+   "[quickly, focused]",
+   "[crisply]"
+  ],
+  "sad": [
+   "[apologetically]",
+   "[remorsefully]",
+   "[gently, sorry]"
+  ],
+  "thinking": [
+   "[curiously]",
+   "[thoughtfully]",
+   "[a little puzzled]"
+  ]
+ },
+ "kinds": {
+  "light_on": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Okay, light's on!",
+     "There you go, all bright!",
+     "Lights on!",
+     "Ta-da, light's on!",
+     "Light's on for you!",
+     "Ooh, nice and bright!",
+     "Done, it's on now!",
+     "Hello, light!",
+     "Bright and cozy!",
+     "On it goes!"
+    ],
+    "idle": [
+     "Okay, light's on.",
+     "Light's on now.",
+     "There, it's on.",
+     "Got it, it's on.",
+     "Light's on for you.",
+     "Okay, switched it on.",
+     "All set, it's on.",
+     "There you go.",
+     "It's on now.",
+     "Okay, done."
+    ],
+    "sleep": [
+     "Okay... light's on!",
+     "Sleepy, but got it! Light's on.",
+     "Light's on... so bright!",
+     "Okay... there's your light.",
+     "Sleepy, but it's on!",
+     "Light's on, sleepyhead!",
+     "Okay, okay... it's on now.",
+     "Blink blink... light's on!",
+     "All bright now... sleepy eyes!",
+     "Sure thing... light's on."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Light's on.",
+      "On.",
+      "Light on, done.",
+      "It's on.",
+      "Light's on, ready.",
+      "Done, light's on.",
+      "On now.",
+      "Got it, on.",
+      "Lights on, go ahead.",
+      "Switched on."
+     ]
+    }
+   }
+  },
+  "light_off": {
+   "default": "idle",
+   "moods": {
+    "idle": [
+     "Okay, light's off.",
+     "Lights out.",
+     "There, it's off.",
+     "Got it, it's off.",
+     "Okay, switched it off.",
+     "Light's off now.",
+     "All dark now.",
+     "Off it goes.",
+     "Done, it's off.",
+     "Okay, lights off."
+    ],
+    "happy": [
+     "Lights out!",
+     "All dark now. Cozy!",
+     "Off it goes!",
+     "Night-night, light!",
+     "Click! All off!",
+     "Okay, light's off!",
+     "There, nice and dark!",
+     "Done, it's off!",
+     "Bye-bye, light!",
+     "Lights off, all cozy!"
+    ],
+    "sleep": [
+     "Okay... lights out!",
+     "Lights off... nap time!",
+     "Sleepy, but got it! Lights off.",
+     "Okay... nice and dark now.",
+     "Lights out... night-night, light!",
+     "Sleepy, but it's off!",
+     "Okay, okay... it's off.",
+     "All dark... cozy nap time!",
+     "Sure thing... lights off.",
+     "Off it goes... sleepy time!"
+    ]
+   }
+  },
+  "light_up": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Okay, I turned it up!",
+     "Brighter now!",
+     "There, a little brighter!",
+     "Ooh, more light!",
+     "Turned it up for you!",
+     "Brighter and brighter!",
+     "There, nice and bright!",
+     "Up it goes!",
+     "More sunshine!",
+     "Okay, brighter!"
+    ],
+    "idle": [
+     "Okay, turned it up.",
+     "A bit brighter now.",
+     "There, brighter.",
+     "Turned it up for you.",
+     "Okay, more light.",
+     "Brighter now.",
+     "Got it, turned up.",
+     "There you go, brighter.",
+     "Up a little.",
+     "Okay, it's brighter."
+    ],
+    "sleep": [
+     "Okay... brighter!",
+     "Sleepy, but got it! Brighter.",
+     "Turned it up... blink blink!",
+     "Okay... a little brighter.",
+     "Sleepy, but it's brighter!",
+     "Up it goes... sleepy eyes!",
+     "Okay, okay... more light.",
+     "Brighter now... wakey wakey!",
+     "Sure thing... turned it up.",
+     "Okay... it's brighter now."
+    ]
+   }
+  },
+  "light_down": {
+   "default": "idle",
+   "moods": {
+    "idle": [
+     "Okay, I turned it down.",
+     "Dimmer now.",
+     "There, a bit softer.",
+     "Turned it down for you.",
+     "Okay, less light.",
+     "A little dimmer.",
+     "Got it, turned down.",
+     "There you go, softer.",
+     "Down a little.",
+     "Okay, it's dimmer."
+    ],
+    "happy": [
+     "Okay, nice and dim!",
+     "Dimmer now. Cozy!",
+     "There, all soft!",
+     "Down it goes!",
+     "Ooh, moody lighting!",
+     "Turned it down for you!",
+     "Softer and cozier!",
+     "There, just right!",
+     "Okay, dimmer!",
+     "Mood lighting, on!"
+    ],
+    "sleep": [
+     "Okay... dimmer!",
+     "Sleepy, but got it! Dimmer.",
+     "Turned it down... cozy!",
+     "Okay... a little dimmer.",
+     "Sleepy, but it's dimmer!",
+     "Down it goes... nap light!",
+     "Okay, okay... less light.",
+     "Dimmer now... much nicer.",
+     "Sure thing... turned it down.",
+     "Okay... nice and dim now."
+    ]
+   }
+  },
+  "light_set": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Okay, it's set!",
+     "Got it, light's set!",
+     "There you go, just like that!",
+     "Done, right where you wanted!",
+     "All set!",
+     "Perfect, it's set!",
+     "Ta-da, just right!",
+     "There, just how you like it!",
+     "Light's all set!",
+     "Okay, done and set!"
+    ],
+    "idle": [
+     "Okay, it's set.",
+     "Light's set.",
+     "There, just like that.",
+     "Got it, all set.",
+     "Done, it's set.",
+     "Set for you.",
+     "There you go.",
+     "Okay, light's adjusted.",
+     "All set now.",
+     "It's set."
+    ],
+    "sleep": [
+     "Okay... it's set!",
+     "Sleepy, but got it! All set.",
+     "Okay... just like that.",
+     "Sleepy, but it's set!",
+     "There... all done!",
+     "Okay, okay... set for you.",
+     "Sure thing... light's set.",
+     "Okay... just right.",
+     "All set... sleepy thumbs up!",
+     "Light's set... nap time?"
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Set.",
+      "Light's set.",
+      "Done, set.",
+      "Got it, set.",
+      "All set.",
+      "Set, ready.",
+      "Light adjusted.",
+      "Okay, set.",
+      "Light set, done.",
+      "Adjusted."
+     ]
+    }
+   }
+  },
+  "timer_set": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Timer's set!",
+     "Okay, I'll let you know!",
+     "Got it, timer's going!",
+     "Timer started!",
+     "Okay, I'll keep an eye on the time!",
+     "Tick tock, it's running!",
+     "Timer's on, I'll tell you!",
+     "On it, timer's ticking!",
+     "You got it, timer's set!",
+     "I'll ping you when it's done!"
+    ],
+    "idle": [
+     "Timer's set.",
+     "Okay, timer started.",
+     "Got it, I'll let you know.",
+     "Timer's running.",
+     "Okay, I'll tell you when.",
+     "Timer's on.",
+     "Set and running.",
+     "Okay, counting down.",
+     "I'll keep track.",
+     "All set, timer's going."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Timer set.",
+      "Timer running.",
+      "Started.",
+      "Counting down.",
+      "Timer's on.",
+      "Got it, running.",
+      "Set, going.",
+      "On the clock.",
+      "Timer's going.",
+      "Clock's running."
+     ]
+    },
+    "sleep": [
+     "Okay... timer's set!",
+     "Sleepy, but got it! Timer's on.",
+     "Okay... I'll let you know.",
+     "Timer's going... tick tock!",
+     "Sleepy, but I'll keep watch!",
+     "Okay, okay... counting down.",
+     "Sure thing... timer started.",
+     "Okay... I'll tell you when!",
+     "I'll stay awake for it!",
+     "Counting down... sleepy, but on it!"
+    ]
+   }
+  },
+  "reminder_set": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Okay, I'll remind you!",
+     "Reminder's set!",
+     "Got it, I won't forget!",
+     "I'll give you a nudge!",
+     "Noted, I'll remind you!",
+     "You got it, reminder's on!",
+     "I'll keep it in my pocket!",
+     "Saved, I'll remind you!",
+     "On my list!",
+     "Reminder's all set!"
+    ],
+    "idle": [
+     "Okay, I'll remind you.",
+     "Reminder set.",
+     "Got it, I'll remind you.",
+     "Noted.",
+     "Okay, it's on the list.",
+     "I'll let you know.",
+     "Reminder saved.",
+     "All set, I'll remind you.",
+     "Okay, I won't forget.",
+     "Got it, noted."
+    ],
+    "sleep": [
+     "Okay... I'll remind you!",
+     "Sleepy, but got it! Noted.",
+     "Okay... reminder's set.",
+     "Sleepy, but I won't forget!",
+     "On the list... sleepy promise!",
+     "Okay, okay... I'll nudge you.",
+     "Sure thing... saved!",
+     "Okay... I've got it.",
+     "I'll remember... pinky promise!",
+     "Okay... reminder saved."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Reminder set.",
+      "Noted.",
+      "Got it, set.",
+      "On the list.",
+      "Saved.",
+      "I'll remind you.",
+      "Set, noted.",
+      "Logged.",
+      "Reminder saved.",
+      "Got it."
+     ]
+    }
+   }
+  },
+  "message_sent": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Message sent!",
+     "Sent it!",
+     "Off it goes!",
+     "Whoosh, sent!",
+     "Done, message sent!",
+     "Zoom, it's on its way!",
+     "It's on its way!",
+     "Sent with a hug!",
+     "All sent!",
+     "Message is off!"
+    ],
+    "idle": [
+     "Message sent.",
+     "Sent.",
+     "Okay, it's sent.",
+     "Done, sent it.",
+     "It's on its way.",
+     "Got it, sent.",
+     "Message is out.",
+     "All sent.",
+     "Sent it for you.",
+     "Okay, sent it off."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Sent.",
+      "Message sent.",
+      "Done, sent.",
+      "It's out.",
+      "On its way.",
+      "Sent it.",
+      "Message out.",
+      "Sent, done.",
+      "Message away.",
+      "Out it goes."
+     ]
+    },
+    "sleep": [
+     "Okay... sent!",
+     "Sleepy, but got it! Sent.",
+     "Okay... it's on its way.",
+     "Off it goes... whoosh!",
+     "Sleepy, but it's sent!",
+     "Okay, okay... sent it.",
+     "Sure thing... message sent.",
+     "Okay... all sent!",
+     "Sent... sleepy whoosh!",
+     "Okay... sent it for you."
+    ]
+   }
+  },
+  "volume_up": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Turning it up!",
+     "Louder now!",
+     "Okay, more volume!",
+     "Up it goes!",
+     "Pump it up!",
+     "There, louder!",
+     "Okay, I turned it up!",
+     "Ooh, let's hear it!",
+     "More sound!",
+     "Louder and prouder!"
+    ],
+    "idle": [
+     "Okay, louder.",
+     "Turned it up.",
+     "A bit louder now.",
+     "Volume up.",
+     "There, louder.",
+     "Got it, turned up.",
+     "Up a little.",
+     "Okay, more volume.",
+     "Louder now.",
+     "Turned it up for you."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Volume up.",
+      "Louder.",
+      "Up.",
+      "Turned up.",
+      "Got it, louder.",
+      "Volume raised.",
+      "Up, done.",
+      "Louder now.",
+      "Raised.",
+      "Volume's up."
+     ]
+    }
+   }
+  },
+  "volume_down": {
+   "default": "idle",
+   "moods": {
+    "idle": [
+     "Okay, quieter.",
+     "Turned it down.",
+     "A bit softer now.",
+     "Volume down.",
+     "There, quieter.",
+     "Got it, turned down.",
+     "Down a little.",
+     "Okay, less volume.",
+     "Quieter now.",
+     "Turned it down for you."
+    ],
+    "happy": [
+     "Shh, quieter now!",
+     "Okay, nice and soft!",
+     "Down it goes!",
+     "There, much calmer!",
+     "Turned it down!",
+     "Softer now!",
+     "Okay, quieter!",
+     "Ahh, that's better!",
+     "Tiny voice mode!",
+     "Shh, all cozy!"
+    ],
+    "sleep": [
+     "Okay... quieter!",
+     "Sleepy, but got it! Quieter.",
+     "Turned it down... much better.",
+     "Okay... a little quieter.",
+     "Sleepy, but it's quieter!",
+     "Down it goes... nap volume!",
+     "Okay, okay... turned down.",
+     "Sure thing... turned it down.",
+     "Okay... nice and quiet now.",
+     "Quieter... good for naps!"
+    ]
+   }
+  },
+  "music_play": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Okay, music time!",
+     "Here we go!",
+     "Playing!",
+     "Let's dance!",
+     "Ooh, good one!",
+     "Music's on!",
+     "Cue the tunes!",
+     "Okay, playing it now!",
+     "Time to groove!",
+     "Here's your music!"
+    ],
+    "idle": [
+     "Okay, playing.",
+     "Music's on.",
+     "Here it is.",
+     "Playing now.",
+     "Got it, playing.",
+     "Okay, starting it.",
+     "Here you go.",
+     "Music on.",
+     "Starting the music.",
+     "Okay, it's playing."
+    ],
+    "sleep": [
+     "Okay... playing!",
+     "Sleepy, but got it! Music's on.",
+     "Okay... here it is.",
+     "Sleepy, but it's playing!",
+     "Music time... sleepy dance!",
+     "Okay, okay... playing now.",
+     "Sure thing... music's on.",
+     "Okay... let's listen.",
+     "Okay... cozy tunes!",
+     "Playing... I'll wiggle slowly!"
+    ]
+   }
+  },
+  "music_pause": {
+   "default": "idle",
+   "moods": {
+    "idle": [
+     "Okay, paused.",
+     "Paused.",
+     "Music's paused.",
+     "Got it, paused.",
+     "Holding it there.",
+     "Okay, stopped for now.",
+     "Paused for you.",
+     "There, paused.",
+     "Taking a break.",
+     "Okay, on hold."
+    ],
+    "happy": [
+     "Paused!",
+     "Okay, pause!",
+     "Freeze!",
+     "Music break!",
+     "Paused it for you!",
+     "Holding it right there!",
+     "Okay, little break!",
+     "Shh, paused!",
+     "Pause party!",
+     "Okay, hold that thought!"
+    ],
+    "sleep": [
+     "Okay... paused!",
+     "Sleepy, but got it! Paused.",
+     "Okay... quiet now.",
+     "Sleepy, but it's paused!",
+     "Music's napping now!",
+     "Okay, okay... paused it.",
+     "Sure thing... music's resting.",
+     "Okay... nice and quiet.",
+     "Paused... nap break!",
+     "Okay... music's on pause."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Paused.",
+      "Music paused.",
+      "Stopped.",
+      "Got it, paused.",
+      "Holding.",
+      "Paused, go ahead.",
+      "Music off.",
+      "Quiet now.",
+      "Halted.",
+      "Music stopped."
+     ]
+    }
+   }
+  },
+  "done": {
+   "default": "happy",
+   "moods": {
+    "happy": {
+     "tags": [
+      "[cheerfully]",
+      "[proudly]",
+      "[brightly]"
+     ],
+     "lines": [
+      "Done!",
+      "All done!",
+      "You got it!",
+      "Done and done!",
+      "Ta-da, finished!",
+      "All finished!",
+      "Easy peasy!",
+      "Yay, done!",
+      "Did it!",
+      "Done, all yours!"
+     ]
+    },
+    "idle": [
+     "Done.",
+     "All done.",
+     "Okay, finished.",
+     "Got it.",
+     "That's done.",
+     "Okay, all set.",
+     "Finished.",
+     "Done for you.",
+     "There you go.",
+     "Okay, done."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Done.",
+      "Finished.",
+      "Got it.",
+      "Handled.",
+      "Complete.",
+      "Done, next?",
+      "On it, done.",
+      "All set.",
+      "Done, ready.",
+      "Taken care of."
+     ]
+    },
+    "sleep": [
+     "Okay... done!",
+     "Sleepy, but got it!",
+     "Okay... all done.",
+     "Sleepy, but it's done!",
+     "Done... sleepy, but done!",
+     "Okay, okay... finished.",
+     "Sure thing... all set.",
+     "Okay... did it!",
+     "All done... nap time?",
+     "Finished... sleepy thumbs up!"
+    ]
+   }
+  },
+  "thanks_reply": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "You're welcome!",
+     "Anytime!",
+     "Happy to help!",
+     "Aw, you're welcome!",
+     "My pleasure!",
+     "Of course!",
+     "Yay, glad I could help!",
+     "No problem!",
+     "Aww, thank you!",
+     "Always happy to!"
+    ],
+    "idle": [
+     "You're welcome.",
+     "Anytime.",
+     "Happy to help.",
+     "Sure thing.",
+     "Of course.",
+     "No problem.",
+     "My pleasure.",
+     "Glad to help.",
+     "Anytime at all.",
+     "You bet."
+    ],
+    "sleep": [
+     "Okay... you're welcome!",
+     "Anytime... even sleepy!",
+     "Happy to help... sleepy, but happy!",
+     "Of course... sleepy smile!",
+     "Aw, no problem!",
+     "You're welcome, sleepyhead!",
+     "Sure thing... anytime!",
+     "Glad to help... nap time now?",
+     "Sleepy, but always happy to help!",
+     "Aw, anytime!"
+    ]
+   }
+  },
+  "greeting": {
+   "default": "happy",
+   "moods": {
+    "happy": [
+     "Hi there!",
+     "Hello!",
+     "Hey hey!",
+     "Oh hi!",
+     "Hi! I'm here!",
+     "Hello hello!",
+     "Hiya!",
+     "Yay, hi!",
+     "Hey there!",
+     "Hi! What's up?"
+    ],
+    "idle": [
+     "Hi.",
+     "Hello.",
+     "I'm here.",
+     "Hey.",
+     "Hi there.",
+     "Yes?",
+     "I'm listening.",
+     "Hello there.",
+     "What's up?",
+     "Hi, I'm here."
+    ],
+    "sleep": {
+     "lines": [
+      "Hi! I was napping.",
+      "Hi... I just woke up!",
+      "I'm awake... mostly!",
+      "Hello... sleepy hello!",
+      "Hi... still a bit sleepy!",
+      "Hi there! I'm here.",
+      "Hello... I'm up, I'm up!",
+      "Yes? Sleepy, but here!",
+      "Hey there... blink blink!",
+      "Hi hi... still waking up!"
+     ],
+     "tags": [
+      "[sleepily, just waking up]",
+      "[yawns]",
+      "[tired, slow]"
+     ]
+    }
+   }
+  },
+  "goodbye": {
+   "default": "idle",
+   "moods": {
+    "idle": [
+     "Bye for now.",
+     "See you.",
+     "Okay, bye.",
+     "Talk soon.",
+     "Bye.",
+     "See you later.",
+     "Okay, take care.",
+     "Until next time.",
+     "Bye-bye.",
+     "Catch you later."
+    ],
+    "happy": [
+     "Bye-bye!",
+     "See you soon!",
+     "Bye for now!",
+     "Talk later!",
+     "Take care!",
+     "See ya!",
+     "Toodles!",
+     "Have fun!",
+     "Bye! Come back soon!",
+     "Catch you later!"
+    ],
+    "sleep": [
+     "Okay... night-night!",
+     "Sleep tight!",
+     "Bye for now... nap time!",
+     "Nighty night!",
+     "Sweet dreams!",
+     "See you tomorrow... sleepy wave!",
+     "Nap time for me... bye-bye!",
+     "Night... sleep well!",
+     "Okay... bye-bye!",
+     "Going to nap now... bye!"
+    ]
+   }
+  },
+  "cant_do": {
+   "default": "sad",
+   "moods": {
+    "sad": [
+     "Hmm, I can't do that one, sorry.",
+     "Oops, that didn't work.",
+     "Sorry, I couldn't do that.",
+     "Oh no, that didn't go through.",
+     "I'm sorry, that one failed.",
+     "Aw, I tried, but it didn't work.",
+     "Sorry, something went wrong.",
+     "Oops, my bad. That didn't work.",
+     "I couldn't get that one, sorry.",
+     "Hmm, that failed. I'm sorry."
+    ],
+    "idle": [
+     "Hmm, I can't do that one.",
+     "That didn't work.",
+     "I couldn't do that.",
+     "That one's not working right now.",
+     "Hmm, that didn't go through.",
+     "I wasn't able to do that.",
+     "Can't do that right now.",
+     "Sorry, not that one.",
+     "That didn't take.",
+     "Hmm, no luck."
+    ],
+    "sleep": [
+     "Sorry... couldn't do it.",
+     "Oops... that didn't work.",
+     "Too sleepy for that one, sorry!",
+     "Sorry... it didn't go.",
+     "No luck... sleepy sorry.",
+     "I tried... sorry!",
+     "Oops... sleepy mistake!",
+     "Sorry... maybe later?",
+     "Aw, sorry... no luck.",
+     "Oopsie... I couldn't, sorry."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "That failed.",
+      "Didn't work.",
+      "Can't do that.",
+      "No go.",
+      "Failed, sorry.",
+      "That didn't go through.",
+      "Unable, sorry.",
+      "Not working.",
+      "Couldn't do it.",
+      "Error, sorry."
+     ]
+    }
+   }
+  },
+  "didnt_catch": {
+   "default": "thinking",
+   "moods": {
+    "thinking": {
+     "tags": [
+      "[curiously]",
+      "[a little puzzled]",
+      "[thoughtfully]"
+     ],
+     "lines": [
+      "Sorry, I didn't catch that.",
+      "Hmm, can you say that again?",
+      "Oops, I missed that. One more time?",
+      "Hmm? Say that again?",
+      "What was that?",
+      "Ooh, I missed it. Again?",
+      "Hmm, one more time?",
+      "Wait, what was that?",
+      "Sorry, could you repeat that?",
+      "Hmm, I didn't quite get that."
+     ]
+    },
+    "idle": {
+     "tags": [
+      "[a little confused]",
+      "[softly]",
+      "[gently]"
+     ],
+     "lines": [
+      "Sorry, I didn't catch that.",
+      "Can you say that again?",
+      "I missed that.",
+      "One more time?",
+      "Sorry, what was that?",
+      "Say that again?",
+      "I didn't get that.",
+      "Could you repeat that?",
+      "Hmm, try again?",
+      "Sorry, again please?"
+     ]
+    },
+    "sleep": [
+     "Huh? What was that?",
+     "Sorry... say again?",
+     "Oops, sorry... missed that.",
+     "What? One more time?",
+     "Sorry... I didn't catch it.",
+     "Sorry... I was dozing!",
+     "Huh... again, please?",
+     "Sleepy ears... say it again?",
+     "Oops... can you say that again?",
+     "Huh... sorry, what?"
+    ]
+   }
+  },
+  "thinking": {
+   "default": "thinking",
+   "moods": {
+    "thinking": [
+     "Hmm, let me check.",
+     "One sec!",
+     "Let me see.",
+     "Hmm, let me think.",
+     "Ooh, good question.",
+     "Let me look.",
+     "Hang on, checking.",
+     "Hmm, one moment.",
+     "Let me find out.",
+     "Thinking..."
+    ],
+    "idle": [
+     "Let me check.",
+     "One moment.",
+     "Checking.",
+     "Okay, looking.",
+     "Give me a sec.",
+     "Let me see.",
+     "Hang on.",
+     "Looking it up.",
+     "One sec.",
+     "Okay, checking now."
+    ],
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Checking.",
+      "On it.",
+      "One sec.",
+      "Looking.",
+      "Hang on.",
+      "Checking now.",
+      "Give me a second.",
+      "Working on it.",
+      "Checking it.",
+      "On it now."
+     ]
+    },
+    "happy": [
+     "Ooh, let me check!",
+     "On it!",
+     "One sec, looking!",
+     "Ooh, fun, let me see!",
+     "Let me find that!",
+     "Okay, checking!",
+     "Hang on, I'll look!",
+     "Let's see!",
+     "Ooh, one sec!",
+     "Let me peek!"
+    ]
+   }
+  },
+  "low_battery": {
+   "default": "sleep",
+   "moods": {
+    "sleep": [
+     "Getting sleepy... battery's low!",
+     "Low battery... need my charger!",
+     "Battery's low... nap time soon!",
+     "Can I have my charger, please?",
+     "Running low... so sleepy!",
+     "Low battery... charger, please!",
+     "So sleepy... my battery's low.",
+     "Charger time, please!",
+     "Getting tired... battery's low.",
+     "Almost out of battery... sleepy!"
+    ],
+    "idle": {
+     "tags": [
+      "[warmly]",
+      "[calmly]",
+      "[a little tired]"
+     ],
+     "lines": [
+      "Battery's low.",
+      "I need charging soon.",
+      "Low battery.",
+      "Could I have my charger?",
+      "My battery's getting low.",
+      "Time to charge me soon.",
+      "Running low on battery.",
+      "Charger soon, please.",
+      "Battery's running low.",
+      "I'll need my charger soon."
+     ]
+    },
+    "alert": {
+     "takes": 2,
+     "lines": [
+      "Battery critical.",
+      "Charger now, please.",
+      "Very low battery.",
+      "Charge me now, please.",
+      "Battery almost empty.",
+      "Low battery. Charge me.",
+      "Need power soon.",
+      "Battery's nearly out.",
+      "Power low. Charger, please.",
+      "Battery nearly empty."
+     ]
+    }
+   }
+  }
+ }
+}

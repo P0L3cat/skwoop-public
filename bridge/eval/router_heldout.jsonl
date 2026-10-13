@@ -1,0 +1,28 @@
+{"id": 101, "text": "What's it like outside?", "tier": "instant", "expect": "quick-WeatherAsk", "live": true, "note": ""}
+{"id": 102, "text": "Tell me the time.", "tier": "instant", "expect": "quick-TimeAsk", "live": true, "note": ""}
+{"id": 103, "text": "Start a timer for three minutes.", "tier": "instant", "expect": "quick-TimerSet", "live": false, "note": ""}
+{"id": 104, "text": "Kill the lights.", "tier": "instant", "expect": "script-living_off", "live": false, "note": ""}
+{"id": 105, "text": "Wake the TV.", "tier": "instant", "expect": "script-tv_on", "live": false, "note": ""}
+{"id": 106, "text": "Could you pause the Apple TV?", "tier": "instant", "expect": "script-tv_pause", "live": false, "note": ""}
+{"id": 107, "text": "Watch The Office.", "tier": "instant", "expect": "script-tv_play_show", "live": false, "note": ""}
+{"id": 108, "text": "Is the lamp on right now?", "tier": "fast", "expect": "snapshot", "live": true, "note": ""}
+{"id": 109, "text": "Is anybody home?", "tier": "fast", "expect": "snapshot", "live": true, "note": ""}
+{"id": 110, "text": "Turn the bedroom light blue.", "tier": "fast", "expect": "lights", "live": false, "note": ""}
+{"id": 111, "text": "Set the living room light to fifty percent.", "tier": "fast", "expect": "lights", "live": false, "note": ""}
+{"id": 112, "text": "Turn off the TV and the lights.", "tier": "fast", "expect": "tv+lights", "live": false, "note": "compound noun list"}
+{"id": 113, "text": "Turn the lights off in ten minutes.", "tier": "fast", "expect": "decline", "live": false, "note": "no scheduler in the fast tier"}
+{"id": 114, "text": "How hot will it get on Sunday?", "tier": "fast", "expect": "forecast", "live": true, "note": ""}
+{"id": 115, "text": "What's my next meeting?", "tier": "fast", "expect": "calendar", "live": true, "note": ""}
+{"id": 116, "text": "Put eggs on the shopping list.", "tier": "fast", "expect": "todo", "live": false, "note": ""}
+{"id": 117, "text": "Text Dad happy birthday.", "tier": "fast", "expect": "send_text", "live": false, "note": ""}
+{"id": 118, "text": "What are the bots doing?", "tier": "fast", "expect": "bot_status", "live": true, "note": ""}
+{"id": 119, "text": "Is Guard okay?", "tier": "fast", "expect": "bot_status", "live": true, "note": ""}
+{"id": 120, "text": "How did the Cowboys do last night?", "tier": "fast", "expect": "web_search", "live": true, "note": ""}
+{"id": 121, "text": "What's the gas price around here?", "tier": "fast", "expect": "web_search", "live": true, "note": ""}
+{"id": 122, "text": "Why is the sky blue?", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 123, "text": "How do you spell necessary?", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 124, "text": "Order more paper towels.", "tier": "fast", "expect": "decline", "live": false, "note": "no shopping tool"}
+{"id": 125, "text": "Do you remember what I said about Mel's birthday?", "tier": "deep", "expect": "memory", "live": true, "note": ""}
+{"id": 126, "text": "Open my budget spreadsheet and tell me what I spent on groceries.", "tier": "deep", "expect": "file", "live": true, "note": ""}
+{"id": 127, "text": "Find out which robot lawn mowers work on hills and compare them.", "tier": "deep", "expect": "web", "live": true, "note": ""}
+{"id": 128, "text": "Go through my documents and find the dishwasher warranty.", "tier": "deep", "expect": "file", "live": true, "note": ""}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example launchd agent. NOT installed. Copy, set the path below to this checkout's bridge/run.sh,
+     then: launchctl load ~/Library/LaunchAgents/com.skwoop.bridge.plist -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.skwoop.bridge</string>
+  <key>ProgramArguments</key>
+  <array><string>/path/to/skwoop/bridge/run.sh</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>/tmp/skwoop-bridge.log</string>
+  <key>StandardErrorPath</key><string>/tmp/skwoop-bridge.log</string>
+</dict>
+</plist>

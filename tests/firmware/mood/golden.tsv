@@ -1,0 +1,595 @@
+# text	v_int8	a_int8	d_int8	mood_float  (tools/export_mood.py)
+The deploy finished and all checks are green.	0.306111	0.154456	0.070793	idle
+Great news, your package was delivered an hour early!	0.343882	0.483259	0.094435	happy
+Nice, that's three days in a row you hit your step goal.	0.435090	0.276077	0.230619	happy
+The build passed on the first try this time.	0.050193	0.126142	0.090939	idle
+Your flight is on time and the gate just opened.	0.245903	0.328640	0.130876	idle
+Woohoo, the game server is back online and everyone can join.	0.170401	0.116271	0.029710	idle
+Good morning! It's going to be sunny and seventy-two today.	0.255926	0.233503	0.085895	idle
+All your tests passed, no errors this time.	-0.325719	0.163933	0.080938	sad
+Your refund came through, so that dispute is finally settled.	0.209507	0.082392	0.011346	idle
+Your timer is set for ten minutes.	0.227472	0.157597	0.175613	idle
+Okay, I added milk and eggs to the shopping list.	0.353590	-0.036569	0.185207	idle
+You have a dentist appointment tomorrow at nine.	-0.106578	0.124622	-0.049666	plain
+It's currently fifty-eight degrees and partly cloudy.	-0.103017	0.009027	-0.003035	plain
+Sure, I'll remind you to call your mom at six.	0.327190	0.143340	0.102228	idle
+The living room lights are now at forty percent.	0.226530	0.006372	0.096174	idle
+Here's the next item on your calendar: team sync at two.	0.292050	0.121477	-0.007951	idle
+I've started the dishwasher.	-0.109129	0.228002	0.084801	idle
+The thermostat is set to sixty-eight.	0.167332	0.102443	0.101083	idle
+Got it, I'll keep an eye on the build and let you know.	0.435634	0.026429	0.184386	idle
+Your next reminder is in twenty minutes.	0.074152	0.193946	0.084196	idle
+Take a slow breath; there's nothing you need to do right now.	-0.325976	0.196445	-0.001994	sad
+I'll play some rain sounds while you fall asleep.	0.224961	0.033849	0.121288	idle
+Everything is locked up and the house is settled for the night.	0.296384	-0.061348	-0.023339	idle
+No rush, take your time.	-0.218604	0.172471	0.183572	plain
+Sleep well. Your alarm is set for seven.	0.196637	0.005315	0.056971	idle
+It's a quiet evening; nothing new has come in.	0.139467	-0.072902	-0.069385	plain
+Relax, I'll handle the reminders tomorrow morning.	0.322242	0.054494	0.023515	idle
+Sorry, the deploy failed on the last step.	-0.235819	0.164704	-0.048426	sad
+I couldn't reach the weather service, so I don't have a forecast.	-0.065258	0.079457	0.009779	plain
+Unfortunately your flight has been cancelled.	-0.521734	0.166371	-0.161657	sad
+I'm sorry, I didn't catch that.	-0.510313	0.162874	-0.096995	sad
+The build broke again with three test failures.	-0.064043	0.499516	-0.115853	alert
+Your package is delayed and won't arrive until Thursday.	-0.062532	0.040532	0.008888	plain
+I lost the connection to the living room speaker.	0.030504	0.157039	-0.092265	idle
+My apologies, I set that reminder for the wrong day.	-0.412289	0.083344	-0.175139	sad
+The game server crashed and the last save didn't go through.	-0.290802	0.166502	-0.040376	sad
+I'm afraid the vet called to say Biscuit's test results aren't great.	-0.202682	0.262439	-0.048060	sad
+Bad news: the plumber can't come until next week.	-0.377939	0.131576	-0.164948	sad
+That didn't work, and I'm not sure why.	-0.335667	-0.002716	-0.011173	sad
+The smoke alarm is going off in the kitchen!	-0.317141	0.605986	-0.060229	alert
+Someone is at the front door.	0.047471	0.202802	0.093470	idle
+Heads up, there's a package at the front door.	-0.043147	0.104719	-0.032616	plain
+Water leak detected under the bathroom sink.	-0.621484	0.209606	-0.175193	sad
+Your meeting starts in two minutes!	0.143325	0.551101	0.164742	alert
+Warning: the garage door has been open for an hour.	-0.232553	0.325095	-0.044705	alert
+The front door just unlocked while you're away.	-0.174928	0.233431	-0.050699	sad
+Storm warning: severe thunderstorms expected within the hour.	-0.333729	0.154294	-0.173919	sad
+The oven has been on for three hours.	0.008197	0.159935	0.050163	idle
+Carbon monoxide detected in the basement, please get outside now.	-0.179927	0.292423	0.012942	alert
+Traffic on I-35 is heavier than usual.	-0.056531	0.081816	-0.088118	plain
+The printer is out of black ink.	-0.125314	0.058215	0.034147	plain
+There's a ninety percent chance of rain this afternoon.	-0.055576	0.174810	-0.058502	plain
+The pull request has two review comments to address.	0.079624	-0.242374	-0.060021	plain
+Your phone battery is at fifteen percent.	0.122981	0.179158	0.196877	idle
+The recycling pickup was moved to Friday.	0.135946	-0.016429	0.094493	idle
+The trash bin is full.	0.164502	0.114917	0.100129	idle
+The washer finished, but the dryer still has a load in it.	-0.257058	0.242457	-0.100865	sad
+No errors, and the backup finished in record time.	-0.023235	0.237990	0.120253	idle
+Nothing went wrong overnight.	-0.439790	0.052890	-0.102347	sad
+The update didn't fix the problem.	-0.324614	0.154298	-0.070485	sad
+The doctor's office never called back.	-0.284262	0.123632	-0.066892	sad
+No new messages, but your calendar is clear this afternoon.	-0.103997	0.132124	0.025157	plain
+Your package was delivered to the wrong address.	-0.213486	-0.055219	-0.114306	sad
+The repair is going to cost about twelve hundred dollars.	0.039533	0.236931	0.033225	idle
+The upload got to ninety percent and then stopped.	-0.216781	0.126006	-0.140460	sad
+Yes! I finally got the job!	0.593858	0.576576	0.228520	happy
+That's awesome, thank you so much!	0.908206	0.674735	0.229980	happy
+We won the game last night!	0.485077	0.548556	0.191615	happy
+I love this song, turn it up!	0.487127	0.648013	0.251022	happy
+The new couch looks amazing in here.	0.639103	0.129153	0.103047	happy
+My sister is having a baby!	0.473671	0.682560	0.049357	happy
+Perfect, that's exactly what I wanted.	0.128890	0.356405	0.365470	idle
+I can't believe how good this pizza is.	-0.102734	0.255134	0.068398	idle
+Haha, that's hilarious.	0.182084	0.195568	0.227103	idle
+We're going to Disney in two weeks!	0.144771	0.484689	0.381159	happy
+Set a timer for twenty minutes.	0.056941	0.101120	0.123067	idle
+What's the weather like tomorrow?	-0.024607	0.133800	0.056226	idle
+Add paper towels to the list.	0.037435	-0.044117	0.097410	plain
+Remind me to take out the trash at seven.	-0.089638	0.120191	0.072820	plain
+Hey Skwoop, good morning.	0.377274	0.073909	-0.011435	idle
+What time is my first meeting?	0.180448	0.321251	0.038443	idle
+Turn the kitchen lights on.	0.245077	-0.083355	0.111696	idle
+Thanks, Skwoop.	0.487745	0.114220	-0.027127	idle
+Did the build finish yet?	-0.164289	0.060654	-0.102068	sad
+Play some jazz in the living room.	0.112727	0.104005	-0.008620	idle
+I'm so tired, today was rough.	0.034320	-0.007572	-0.055848	plain
+My flight got cancelled again.	-0.217511	0.257794	-0.153284	sad
+I failed my driving test.	-0.303723	0.204809	-0.083872	sad
+Ugh, I forgot Mom's birthday.	-0.166891	0.090750	0.007993	plain
+The dog is sick and won't eat.	-0.351274	0.104439	-0.116282	sad
+Nothing is going right this week.	-0.227498	0.248240	0.144031	sad
+I miss my grandpa.	-0.011450	0.068686	0.056736	plain
+That's disappointing, I really wanted to go.	-0.501959	0.305683	-0.023815	sad
+Why do the lights keep turning off?! This is so annoying.	0.104736	0.094096	0.099198	idle
+Stop! Turn it off right now!	-0.130953	0.634082	0.345487	alert
+Call 911, I think there's a fire!	-0.191111	0.340135	0.127351	alert
+Hurry, I'm late, what's the fastest route?	-0.194541	0.417163	0.082924	alert
+You set the alarm wrong again, I almost missed my bus!	-0.112930	0.517453	0.056699	alert
+The basement is flooding!	-0.058537	0.460024	-0.026998	alert
+Goodnight, Skwoop.	0.248082	-0.074259	0.074908	idle
+Can you play something relaxing?	0.267486	0.061817	0.176945	idle
+I'm just going to rest for a bit.	-0.045618	0.066830	0.079383	plain
+Let's keep it quiet tonight.	0.215650	-0.384925	-0.054440	calm
+The coffee maker is leaking a little.	-0.225729	0.125043	-0.082383	sad
+It's kind of cold in here.	-0.008311	0.061966	-0.066247	plain
+No way, the tickets are still available!	-0.016343	0.335687	0.136654	alert
+I don't feel great today.	-0.068013	0.202961	-0.006542	plain
+Don't open the door, it's not who we're expecting!	-0.190757	0.530853	0.187762	alert
+The fix worked, and the garage opener responds again.	0.313114	0.154903	0.003246	idle
+Your photo backup is complete, all two thousand pictures are safe.	0.285920	0.191629	0.282155	idle
+Score! The concert tickets went through.	0.211466	0.192910	0.063689	idle
+The release shipped and the error rate is flat.	-0.177028	0.148530	-0.050280	sad
+Your sister just landed safely.	0.266144	0.275319	0.124323	idle
+Oh my gosh, the puppy finally learned to sit!	0.496794	0.368263	0.084462	happy
+Best dinner ever, thank you!	0.840154	0.599409	0.180615	happy
+I passed the exam!	0.158694	0.499950	0.157896	alert
+This weekend is going to be so much fun.	0.283668	0.301974	0.087351	idle
+Nice, every light in the house updated without a hitch.	0.684094	0.215093	0.132829	happy
+I'll play the news briefing in the kitchen.	0.259860	0.131110	0.091698	idle
+Your grocery order is scheduled for Saturday morning.	0.012367	0.174788	0.043852	idle
+The porch light will turn on at sunset.	0.339442	-0.042184	0.095552	idle
+Okay, I've paused the music.	0.186870	0.116155	0.168279	idle
+Tomorrow looks mild, around sixty-five.	0.218843	0.157617	0.071395	idle
+You've got two meetings this afternoon.	-0.012793	0.298286	0.095593	idle
+How many ounces are in a cup?	0.047195	0.015255	-0.112925	plain
+Put the living room fan on low.	-0.057620	0.203771	-0.046970	plain
+Read me my reminders.	0.047084	0.238248	-0.076769	idle
+What's on the calendar for Thursday?	0.064612	0.146960	0.032477	idle
+Sure, the bedroom heater is set to sixty-six.	0.183349	0.161485	0.069758	idle
+Lights are off downstairs. Rest well.	0.353498	-0.040398	0.085048	idle
+Let's take this one step at a time.	0.244003	0.103193	0.165802	idle
+I'll keep the house quiet so you can nap.	0.384338	-0.186808	0.056657	idle
+The night is clear and still.	-0.012272	0.071519	0.005345	plain
+I just want to sit on the porch and unwind.	-0.047647	0.105199	0.025647	plain
+Play some ocean waves, please.	-0.054664	0.097474	0.020811	plain
+No need to hurry, the oven will keep it warm.	-0.077902	0.100964	0.152332	plain
+It's late, and everything can wait until tomorrow.	0.273635	-0.037895	0.091373	idle
+I'm sorry, the photo sync stopped partway.	-0.446520	0.181017	-0.159537	sad
+The plumber cancelled again.	-0.174882	0.207729	-0.072454	sad
+Your library hold expired before pickup.	0.188567	0.196250	0.096364	idle
+The tests are red on the main branch.	-0.002670	-0.040306	0.042548	plain
+I'm afraid the concert was postponed.	-0.275264	0.063005	-0.223838	sad
+I can't find that song, sorry.	-0.664248	0.061555	-0.248269	sad
+The bank transfer was declined.	-0.425745	0.067752	-0.137153	sad
+I'm feeling really down tonight.	-0.123056	-0.030944	-0.113792	plain
+We lost the game by one point.	0.026742	0.181149	-0.030658	idle
+My best friend is moving away.	0.285348	0.211102	-0.040759	idle
+I burned the dinner.	-0.042827	0.201322	0.047959	idle
+The kitchen display won't turn back on.	-0.280395	-0.021668	-0.066677	sad
+The fire alarm is sounding upstairs!	-0.171658	0.609790	-0.058331	alert
+The back door is unlocked and nobody is home.	-0.290706	0.292087	-0.013464	sad
+The freezer temperature is rising fast.	-0.302654	0.409831	-0.074713	alert
+Your train leaves in five minutes!	-0.076005	0.557771	0.046192	alert
+There's a car idling in the driveway.	0.000226	0.080836	-0.018157	plain
+Flash flood warning for our county.	-0.282504	0.225340	-0.018159	sad
+Turn the stove off, now!	-0.026686	0.575685	0.200938	alert
+Where are my keys?! I'm going to be late!	0.053253	0.518236	0.278969	alert
+Ugh, the Wi-Fi died in the middle of my call again!	-0.187134	0.494823	0.087427	alert
+Someone is ringing the bell repeatedly.	-0.211864	0.216629	0.035408	sad
+The dishwasher is out of detergent.	-0.381462	0.239010	-0.012727	sad
+The bus is running about ten minutes behind.	-0.054700	0.094647	-0.017347	plain
+Your car is due for an oil change.	0.059935	0.184457	0.071228	idle
+Wind gusts up to thirty this afternoon.	-0.082470	0.167955	-0.110927	plain
+The hallway bulb is out.	-0.056451	0.082417	0.030248	plain
+The air quality is a little worse today.	-0.390348	0.044033	-0.267378	sad
+The water bill came in higher than last month.	-0.035612	0.051834	0.083649	plain
+Sorry about that, I misheard you the first time.	-0.232775	0.207510	-0.027455	sad
+I apologize, your reminder never went off this morning.	-0.239158	0.147895	0.006630	sad
+I'm really sorry, I deleted the wrong note.	-0.649341	0.127421	-0.143227	sad
+Sorry, I don't know how to do that yet.	-0.601815	0.057414	-0.224807	sad
+Forgive me, I booked the table for the wrong night.	-0.317534	0.092589	-0.051423	sad
+My mistake, the alarm was set for p.m. instead of a.m.	-0.131483	0.115160	-0.112206	plain
+I wish I could help with that one, but I can't.	-0.139315	0.221748	-0.108708	sad
+Sorry to say the grocery store ran out of oat milk.	-0.283786	0.140915	-0.033234	sad
+Apologies, the playlist you made last week got wiped.	-0.012926	0.027498	-0.094088	plain
+Your laptop repair came back as not covered by the warranty.	0.000309	0.274253	0.105705	idle
+The hotel lost your reservation for Friday.	-0.039354	0.077385	-0.055451	plain
+Last night's database restore failed halfway.	-0.195926	0.250804	-0.000622	sad
+The vet says Pepper needs surgery on her leg.	0.012186	0.170127	0.089596	idle
+Your passport renewal was rejected because of the photo.	-0.284091	0.163574	-0.059837	sad
+The tomato plants didn't survive the hailstorm.	-0.020014	0.079555	0.061894	plain
+None of the three apartments you applied for came through.	0.099581	0.177577	0.081597	idle
+Your favorite bakery on Elm Street is closing for good.	0.364989	0.158518	-0.011190	idle
+It's been a year today since your dad passed.	0.087847	0.179166	0.043485	idle
+I know the house feels empty without Max.	-0.123231	0.034117	0.025129	plain
+That sounds really lonely. I'm sorry you're going through it.	-0.249361	0.210028	0.093643	sad
+Your grandmother's old radio finally stopped working.	-0.016793	0.027752	0.050673	plain
+It's okay to feel sad about it.	-0.442320	0.095147	-0.212810	sad
+I just found out my uncle died.	-0.131101	0.333586	-0.013928	alert
+I've been crying all afternoon.	-0.389535	0.269599	-0.151415	sad
+I didn't get the scholarship.	-0.148580	0.086091	0.127139	plain
+My car got towed and I can't afford the fee.	-0.247917	0.160435	-0.209960	sad
+Honestly, I feel kind of hopeless lately.	-0.059632	0.128789	-0.213195	plain
+Our cat ran away three days ago and hasn't come back.	-0.131963	0.169395	-0.079616	sad
+Nobody showed up to my party.	-0.254387	0.193174	-0.011497	sad
+I got laid off this morning.	-0.109195	0.088102	0.008728	plain
+I wish Grandma could have seen this.	-0.164307	0.142506	-0.124872	sad
+The doctor said the knee won't heal without surgery.	-0.334533	0.223890	-0.020391	sad
+I'm sorry I snapped at you earlier.	-0.369233	0.247729	-0.127436	sad
+Squirrels dug up every bulb I planted.	-0.000430	0.160071	0.104136	idle
+I feel like I let everyone down.	-0.047665	0.048095	0.041829	plain
+My brother and I had a huge fight and he won't talk to me.	-0.320994	0.159938	-0.154657	sad
+Your offer on the house was accepted!	0.208529	0.318594	0.188763	idle
+The migration finished and every record checks out.	0.316916	0.163148	0.113509	idle
+Your niece just sent a video of her first steps.	0.181845	0.352229	0.117846	idle
+You've saved enough for the new bike.	0.242907	0.176447	0.276836	idle
+Hooray, the heat pump is fixed and the house is warming up.	0.492358	0.228186	0.129347	happy
+Every plant in the garden made it through the frost.	0.245386	0.124920	0.080998	idle
+Your team won trivia night, apparently by a landslide.	0.285039	0.007149	0.029557	idle
+The vet says Pepper is healthy as can be.	0.283415	0.097617	0.115921	idle
+We're engaged!	0.365407	0.753954	0.468173	happy
+That was the best concert I've ever been to.	0.241376	0.102306	0.111584	idle
+My test results came back all clear!	0.144185	0.459256	0.087229	alert
+Finally, a whole weekend with nothing to do but fish.	0.054867	0.115521	0.034876	idle
+The kids loved the treehouse!	0.497091	0.393279	0.208360	happy
+I nailed the presentation today.	-0.102290	0.119205	0.001150	plain
+The guest room fan is on medium.	0.159953	0.141842	-0.030116	idle
+I've added a dentist reminder for next Tuesday.	0.003124	0.145578	0.108624	idle
+Sunset tonight is at seven forty-two.	0.251199	-0.060516	-0.022357	idle
+Alright, the robot mop will start at noon.	0.064911	0.186741	0.086458	idle
+Your podcast is paused at minute fourteen.	0.092794	0.080672	0.112129	idle
+The pharmacy opens at eight on Sundays.	-0.098538	0.002153	-0.082668	plain
+Done, the shopping list now has bread and lemons.	0.281182	-0.001139	0.171269	idle
+Open the blinds in the office.	-0.056635	0.137443	-0.067328	plain
+When will the dryer be finished?	-0.081268	0.178890	-0.013912	plain
+Text Sam that I'm on my way.	0.152205	0.104085	0.092292	idle
+Switch the TV to the cooking channel.	0.163920	-0.052991	0.039914	idle
+What's the capital of Peru?	-0.020774	0.182031	0.065225	idle
+Morning, Skwoop.	-0.004935	-0.078199	-0.054766	plain
+The candles are out and the doors are locked. Sleep tight.	0.099602	-0.020529	0.018371	idle
+Breathe in for four, hold, and let it go slowly.	0.240220	-0.079122	-0.073662	idle
+There's no hurry tonight; the dishes can wait.	0.182169	-0.154485	0.000025	plain
+I'll fade the music out over the next twenty minutes.	0.208389	0.183433	0.127397	idle
+The snow is falling softly outside.	-0.015187	0.106707	-0.034320	plain
+You did enough for today. Let it rest.	-0.030448	0.004524	0.143774	plain
+Turn everything down, I'm heading to bed.	-0.129089	0.077799	-0.033897	plain
+I'm going to read on the couch for a while.	0.212319	0.013301	0.088851	idle
+Put on the fireplace video, low volume.	-0.171635	0.099398	0.042049	plain
+Night night, Skwoop.	0.044974	-0.044689	-0.061070	plain
+Gas smell reported near the furnace, open a window now!	-0.477954	0.588451	-0.039244	alert
+The baby monitor lost its signal.	-0.123792	0.109943	-0.223307	sad
+Your ride is outside right now.	0.303866	0.264473	0.293133	idle
+The sump pump stopped and the water is rising.	-0.038041	0.253160	0.014659	idle
+A window sensor tripped in the guest room.	0.024451	0.174827	0.004059	idle
+Tornado warning: take shelter in the basement.	-0.189499	0.184763	-0.050699	sad
+Boarding closes in ten minutes!	0.100778	0.346476	0.004841	idle
+The stove burner is still on and nobody is in the kitchen.	-0.095048	0.279145	-0.016159	alert
+Your credit card was just used in another state.	0.029214	0.017217	0.009155	plain
+Help, Grandpa fell and he can't get up!	-0.317147	0.402485	-0.084601	alert
+Shut the music off, the baby's sleeping!	-0.152654	0.477571	0.120500	alert
+Oh no, the dog got out of the yard!	-0.313556	0.363527	0.094553	alert
+Quick, where's the fire extinguisher?	-0.301746	0.275416	-0.219971	sad
+Why is the heat blasting at three in the morning?!	-0.034517	0.398934	-0.005211	alert
+The paper towels are almost gone.	-0.050352	-0.078067	-0.069478	plain
+Expect light drizzle on and off today.	0.026776	0.124565	0.038923	idle
+The left rear tire is a bit low.	-0.267326	0.015719	-0.145408	sad
+Your library books are due Monday.	0.054832	0.188314	0.067547	idle
+The software update will take about forty minutes.	0.060527	0.151590	0.006330	idle
+We're down to the last few coffee beans.	0.016575	0.168250	0.228930	idle
+Pollen counts are high this morning.	-0.014097	0.031710	-0.003983	plain
+The garage remote battery is getting weak.	-0.113943	0.133222	0.040228	plain
+Parking downtown is mostly full right now.	0.142055	0.210938	0.123962	idle
+The bathtub takes forever to empty now.	-0.180552	0.071382	0.052249	plain
+It's a little stuffy in the bedroom.	-0.019562	0.045574	-0.029666	plain
+The fridge is making that humming noise again.	-0.113497	0.216972	0.087644	plain
+Woohoo, your package beat the estimate and it's already on the porch!	0.186925	0.331467	-0.001211	idle
+Thank you so much for fixing my speaker, I can hear everything again!	0.646406	0.551618	0.091720	happy
+We won the trivia night at the pub!	0.358177	0.301607	0.098930	happy
+Good morning! It's sunny and seventy-two, a perfect day for a bike ride.	0.608019	0.272076	0.198178	happy
+Thanks a million, Skwoop, you saved my evening.	0.596371	0.157575	0.012385	happy
+Look at that, the tomatoes finally turned red overnight!	0.228924	0.211706	0.081764	idle
+My daughter just took her first steps!	0.005626	0.706969	0.105931	alert
+Nice work, that's ten thousand steps before lunch!	0.603675	0.423039	0.236480	happy
+Welcome back! I warmed up the living room for you.	0.513468	0.547660	0.164310	happy
+I passed my driving test on the first try!	0.075919	0.424317	0.156248	alert
+Great news, the refund went through and the money is back in your account.	0.493608	0.271703	0.127479	happy
+You're the best, that playlist was exactly right for the party.	0.219423	0.116194	0.110194	idle
+Happy birthday, Sam! I hope today is full of cake and good surprises.	0.915691	0.462536	0.176497	happy
+The job offer came through this afternoon!	0.039162	0.412163	0.026759	alert
+Yes! Your team scored in the final minute and took the match.	0.621872	0.405502	0.069937	happy
+Thanks for the kind words, that made my whole day.	0.368131	0.110428	-0.090497	idle
+Morning, Skwoop! I slept like a rock and feel amazing.	0.308860	0.181391	0.047345	idle
+All twelve of your plants got watered and they look fantastic.	0.282450	0.094181	0.063317	idle
+Grandpa's coming home from the hospital tomorrow!	0.100283	0.426623	0.063870	alert
+Congrats on finishing the marathon, what an effort!	0.253910	0.305661	0.159711	idle
+Thank you for remembering our anniversary dinner.	0.591159	0.233249	0.096001	happy
+Snow day! No school for the kids tomorrow.	0.034446	0.214680	0.110223	idle
+The puppy learned to sit in one afternoon, I'm so proud!	0.464586	0.419716	0.071162	happy
+Hey there, lovely to hear your voice again! How was the trip?	0.395955	0.496511	-0.013643	happy
+Every item on your list is checked off. Brilliant day!	0.370866	0.481389	0.210863	happy
+We finally booked the beach house for August!	0.382498	0.464824	0.137063	happy
+Lights are dimmed for the evening. Rest easy.	0.498111	-0.252228	0.071811	calm
+All done for today. Nothing else needs you tonight.	-0.054733	0.052066	0.025416	plain
+I'm going to curl up with some tea and a book.	0.215461	-0.035194	0.121300	idle
+Don't worry, the doors are locked and everyone's tucked in.	-0.048166	0.165857	-0.014074	plain
+Sweet dreams. I'll keep things hushed until seven.	0.188819	-0.099241	0.071641	idle
+Just lying in the hammock listening to the birds.	-0.072747	0.208868	0.096434	idle
+Take your time, there's no rush on any of this.	-0.163051	0.034848	0.043056	plain
+The bath is drawn and the lavender candle is lit.	-0.216177	0.169000	-0.031419	sad
+What a slow, lovely Sunday this has been.	0.293222	0.260780	-0.005134	idle
+It's okay, we can pick this up again in the morning.	0.041472	0.078748	0.046291	idle
+Soft rain is falling outside, a good night for sleeping in.	0.149457	0.218912	0.149721	idle
+Kids are in bed and everything is finally still.	0.138977	0.110231	0.078125	idle
+Everything's handled. You can breathe out now.	0.283354	0.186492	0.150013	idle
+I've set a gentle wake-up with birdsong for tomorrow.	0.250945	0.106393	0.163288	idle
+Sitting on the porch watching the sun go down.	0.063693	-0.049941	0.050168	plain
+No more alerts until morning. Goodnight.	-0.208997	0.017422	0.027142	plain
+That went fine, nothing to worry about at all.	-0.033048	0.002281	-0.123580	plain
+I think I'll just stretch for a while and unwind.	0.044752	0.000006	0.115416	idle
+The fire's down to embers and the blankets are on the couch.	-0.159676	0.038859	-0.156383	sad
+Breathe in slowly, and out. You're doing just fine.	0.278466	0.032624	-0.110355	idle
+Feeling peaceful after that long walk by the river.	0.028264	-0.047280	-0.199704	plain
+The laundry's folded and put away. Enjoy your evening.	0.465371	0.249820	0.190822	happy
+Your dentist appointment is Tuesday at ten.	0.050901	0.114842	0.011919	idle
+Oat milk is on the grocery list now.	0.075733	0.100570	0.122700	idle
+Put on that Fleetwood Mac album for me.	-0.122461	0.069648	-0.011349	plain
+Sure thing, twelve minutes on the egg timer starting now.	-0.075731	0.244652	0.055271	idle
+Hi, I'm here. What can I do for you?	0.085681	0.146176	0.119121	idle
+What's on my calendar for Friday?	0.042121	0.223263	-0.003262	idle
+Noted. At four I will nudge you about calling the animal clinic.	-0.133260	0.060662	0.114038	plain
+The garage light is on; want me to switch it off?	0.175538	0.173901	0.094102	idle
+Set the thermostat to sixty-nine, please.	0.137160	0.095083	0.038475	idle
+Expect a gentle breeze and highs near sixty on Monday.	0.146325	0.045032	0.066515	idle
+Your podcast picked up where you left off.	-0.092106	0.173160	0.091413	plain
+Remind me where I parked the car.	0.088636	0.053236	0.035937	idle
+Sorry, I lost the timer when the power blinked.	-0.461501	0.105253	-0.140182	sad
+I'm afraid the concert you wanted is completely sold out.	-0.203550	0.248413	0.042524	sad
+Our old cat didn't make it through the night.	-0.263451	-0.030414	-0.017076	sad
+I'm sorry, the photos from the trip didn't back up.	-0.479806	0.134269	-0.107113	sad
+Not a single friend came to watch my game.	-0.068504	0.141525	0.006830	plain
+Bad news, the airline scrapped your return flight.	-0.347850	0.152590	-0.132332	sad
+My apologies, I sent that message to the wrong Alex.	-0.503109	0.165720	-0.216684	sad
+I really miss how loud the place was when the kids were little.	-0.299077	0.095536	-0.068143	sad
+The repair shop says the old car isn't worth fixing.	-0.169147	0.100062	-0.056308	sad
+The scholarship committee turned me down.	-0.001545	-0.037962	0.029355	plain
+I'm sorry you're having such a rough week.	-0.180388	0.314120	-0.063767	alert
+The bakery on Fifth closed for good last week.	0.205624	0.110519	0.062607	idle
+The garden didn't survive the frost.	-0.113902	0.163835	0.011921	plain
+Apologies, that track isn't on any service I can reach.	-0.183833	-0.009226	-0.126198	sad
+Feeling a bit lonely tonight.	-0.046410	-0.157187	-0.158642	plain
+Your favorite show got cancelled after this season.	-0.063454	0.080206	-0.001584	plain
+There's smoke near the toaster, go look right away!	-0.378365	0.536868	-0.039293	alert
+Water's pouring in downstairs, what do I do?	-0.101695	0.135968	-0.033706	plain
+Heads up, the front door has been unlocked for an hour.	-0.232452	0.185122	-0.040448	sad
+Leave now if you want to make the 5:40 train!	-0.190760	0.463517	0.142617	alert
+Where's my passport? The taxi is already here!	0.078690	0.374432	0.064396	idle
+Freezing rain warning: the roads will ice over after dark.	-0.141408	0.378685	-0.133518	alert
+The water heater is leaking onto the garage floor!	-0.336755	0.458590	-0.145202	alert
+Stop the music, the baby just woke up screaming!	-0.307123	0.639985	0.039978	alert
+The CO detector upstairs is going off, everybody out now.	0.112164	0.415785	0.215183	alert
+Quick, your pot is boiling over!	0.102426	0.545902	0.039986	alert
+Somebody's trying the back door handle!	-0.054448	0.726949	0.142269	alert
+Battery at three percent, plug me in soon or I'll shut off.	-0.294220	0.172818	0.033673	sad
+The recycling pickup moved to Thursday this week.	0.119301	0.039932	0.095945	idle
+Traffic is a little slower than usual on the highway.	0.050305	-0.048747	-0.048539	plain
+We ran out of printer paper again.	-0.084931	0.286890	0.094579	idle
+The store is out of the brand you usually buy.	0.082366	0.069002	0.104350	idle
+Tomorrow will be cloudy and a bit cooler.	-0.045303	0.130503	0.085497	idle
+The milk expires today.	0.242469	0.210940	0.131926	idle
+Your meeting runs fifteen minutes longer than planned.	0.157973	0.101838	0.055241	idle
+That library book is due back on Monday.	-0.189560	0.127089	-0.055076	sad
+I guess the soup needs more salt.	0.007869	0.012935	0.101453	plain
+Installing that patch needs roughly twenty minutes.	-0.202784	0.094585	0.046597	sad
+The neighbor's dog is barking again.	-0.113958	0.245152	0.023063	plain
+Ugh, my ride is stuck twenty minutes away.	-0.255508	0.384314	0.128871	alert
+All quiet tonight. Every door is bolted and the porch lamp is dim.	0.154684	-0.089017	-0.118670	plain
+Everything's settled for the evening; nothing needs you until morning.	0.102080	-0.019045	-0.018656	idle
+The dryer finished and the house has gone still. Rest easy.	0.028906	0.070362	-0.034089	plain
+No new messages. You can let the day wind down.	0.081995	-0.028044	0.125678	idle
+Finally sitting on the couch with a mug of chamomile.	0.305832	0.037321	0.130356	idle
+The baby monitor has been silent for an hour. Sleeping soundly.	-0.132947	0.061470	-0.016138	plain
+I turned the bedroom lamp down low and started the rain sounds.	-0.018100	0.098702	0.110086	idle
+Sunday mornings with nowhere to be are the best kind of slow.	0.200272	0.236110	0.044897	idle
+Backups ran overnight without a hiccup, so there's nothing to check.	-0.115211	0.141517	-0.009969	plain
+Take your time. Dinner can simmer for another hour.	0.120668	0.089375	0.114703	idle
+Snowflakes are drifting past the window and the block is hushed.	-0.343819	0.160232	0.005040	sad
+Heat is holding at sixty-eight and the windows are shut. Cozy in here.	0.170705	0.092930	-0.000036	idle
+Done for today. I'll keep an ear out while you nap.	0.246549	0.007417	0.128797	idle
+We spent the afternoon reading in the hammock.	-0.093214	0.180556	-0.115062	plain
+The kids drifted off early, and the living room is all yours.	0.151133	0.238599	0.097735	idle
+No rush on the bills; they aren't due until the twentieth.	-0.458472	0.058792	-0.011126	sad
+Just a gentle walk by the pond to end the evening.	0.191691	-0.012375	-0.006991	idle
+Fan on low, blinds closed. Sleep well.	-0.102957	0.076259	-0.191544	plain
+The dishwasher is on its quiet cycle and the kitchen is tidy.	0.083718	0.011410	-0.026250	plain
+Nothing urgent today. A slow, easy one.	-0.145450	0.219390	-0.027344	sad
+I miss the sound of Grandpa humming in the garden.	-0.110162	0.171438	0.026262	plain
+The old cat didn't wake up this morning. I'm so sorry.	-0.610037	0.052100	-0.268904	sad
+Another quiet evening alone since the move.	0.010039	-0.151431	-0.196088	plain
+The garage is closed. Porch light off.	0.091617	0.131937	-0.010811	idle
+Overnight heat goes down to sixty-six.	0.086958	0.012238	0.028559	idle
+Not much going on, just folding towels.	-0.086113	0.099719	0.074939	plain
+I'm sorry, the photo backup failed and last week's pictures didn't save.	-0.428687	0.150839	-0.011282	sad
+Sorry, every ticket for the show is gone.	-0.184822	0.078110	-0.062848	sad
+My sister's flight got cancelled, so she can't make it for Thanksgiving.	-0.035989	0.279303	-0.149685	plain
+The peppers on the patio died in last night's cold snap.	-0.232884	0.002722	-0.086129	sad
+I couldn't reach the vet before they closed. I'm sorry.	-0.403537	0.118216	-0.202525	sad
+We had to put our old dog down yesterday.	-0.111113	-0.006008	0.036551	plain
+Carbon monoxide levels are rising near the furnace room; leave the house right now.	-0.186889	0.258391	0.028107	sad
+Smoke alarm going off in the hallway!	-0.458432	0.668211	-0.074851	alert
+Water sensor under the sink is wet. Shut the valve right away.	-0.383963	0.077927	-0.030639	sad
+Someone is walking up the driveway at three in the morning and the side door is unlocked.	-0.057976	0.198035	-0.080417	plain
+Gas smell reported near the stove; open the windows and leave the house.	-0.257144	0.277217	-0.097144	sad
+Freezer temperature is climbing fast, it's at twenty-five degrees.	-0.304157	0.213712	-0.088507	sad
+Someone is jiggling the patio door right now!	-0.071991	0.465515	0.106437	alert
+Severe thunderstorm warning: hail expected in ten minutes, move the car inside.	-0.151531	0.309146	-0.093844	alert
+The bank approved your mortgage!	0.290947	0.426054	0.229775	happy
+Our quiz team just knocked off the reigning champs!	0.035589	0.563519	0.078261	alert
+Wonderful news, your biopsy was benign!	0.669952	0.599384	0.158234	happy
+Happy birthday! The cake order is confirmed for noon.	0.271611	0.267666	0.176709	idle
+I ran the whole half marathon without stopping!	-0.016936	0.483124	0.092913	alert
+Nice, the solar panels covered the whole bill this month!	0.565510	0.454465	0.217437	happy
+The roof repair is finished, but it cost twice the estimate.	0.156319	0.125432	-0.020122	idle
+I got the job in Denver, though it means leaving all my friends.	-0.089591	0.086111	-0.036570	plain
+Your grandmother is out of surgery; she'll be in the hospital another week.	0.077570	0.180363	0.034471	idle
+The movers broke a lamp. Still, everything else arrived in one piece.	-0.207721	0.208674	-0.096922	sad
+Our team lost the final, yet I've never been prouder of them.	0.281814	0.338972	0.114927	happy
+Even though the picnic got rained out, the kids loved the board games instead.	0.283559	0.121477	0.121727	idle
+Good news on the car: it passed inspection. The bad news is the brakes need replacing soon.	0.005211	0.123624	-0.055752	plain
+I'm thrilled about the baby, but honestly I'm terrified too.	0.045803	0.057122	-0.032691	plain
+The heater is fixed, and the repair bill is waiting on the counter.	0.183962	0.212610	-0.096036	idle
+It's your last day at the old office; I know it's bittersweet.	0.189952	0.087496	0.020377	idle
+The vacation was wonderful, but the flight home was a nightmare.	0.208496	0.129018	-0.081456	idle
+Your refund finally came through, though it's forty dollars short.	0.103585	0.058984	0.030700	idle
+I'm relieved the test is over, but I'm pretty sure I failed it.	-0.154699	0.265589	0.060722	sad
+The neighbors found your lost cat, but she has a hurt paw.	-0.101283	0.280923	-0.043162	alert
+I'm so sorry, I forgot to order the filters.	-0.354908	0.085769	-0.169126	sad
+I'm so sorry, I forgot to save the draft.	-0.330218	0.098442	-0.180008	sad
+I'm so sorry, I forgot to send that message.	-0.337781	0.067892	-0.166566	sad
+I'm so sorry, I forgot to log the workout.	-0.348039	0.082306	-0.179849	sad
+I'm so sorry, I forgot to set that alarm.	-0.373268	0.106681	-0.176991	sad
+I'm so sorry, I forgot to start the recording.	-0.297581	0.088854	-0.160307	sad
+Sorry, the news feed let me down and the request was lost.	-0.301828	0.123761	-0.198128	sad
+Sorry, the map service let me down and the request was lost.	-0.323001	0.056713	-0.213799	sad
+Sorry, the forecast provider let me down and the request was lost.	-0.335989	0.103249	-0.153442	sad
+Sorry, the mail server let me down and the request was lost.	-0.408307	0.109836	-0.166253	sad
+Sorry, the music service let me down and the request was lost.	-0.265537	0.077541	-0.186316	sad
+Sorry, the camera cloud let me down and the request was lost.	-0.387684	0.098305	-0.202578	sad
+Sorry, the calendar server let me down and the request was lost.	-0.352792	0.099258	-0.198403	sad
+Sorry, the smart plug cloud let me down and the request was lost.	-0.337898	0.127596	-0.197284	sad
+My apologies, I got the time for the call with Sam wrong.	-0.303153	0.085698	-0.162668	sad
+My apologies, I got the time for the haircut wrong.	-0.326578	0.084441	-0.167499	sad
+My apologies, I got the time for the vet visit wrong.	-0.296304	0.074681	-0.171197	sad
+My apologies, I got the time for the oil change wrong.	-0.315721	0.083188	-0.161022	sad
+My apologies, I got the time for the parent meeting wrong.	-0.294127	0.087321	-0.157425	sad
+My apologies, I got the time for the gym class wrong.	-0.312469	0.090108	-0.168033	sad
+My apologies, I got the time for lunch with Priya wrong.	-0.296388	0.089922	-0.166568	sad
+My apologies, I got the time for soccer practice wrong.	-0.305877	0.083191	-0.160474	sad
+My apologies, I got the time for the standup wrong.	-0.312611	0.089625	-0.164889	sad
+My apologies, I got the time for the book club wrong.	-0.321707	0.077252	-0.172923	sad
+I messed up the reunion booking, and I'm sorry.	-0.344455	0.098679	-0.174813	sad
+I messed up the museum visit booking, and I'm sorry.	-0.328655	0.093863	-0.172581	sad
+I messed up the picnic booking, and I'm sorry.	-0.360879	0.086099	-0.176565	sad
+I messed up the dinner party booking, and I'm sorry.	-0.351441	0.099768	-0.167296	sad
+I messed up the movie night booking, and I'm sorry.	-0.350248	0.080527	-0.185398	sad
+I messed up the fishing trip booking, and I'm sorry.	-0.332298	0.090727	-0.166531	sad
+I messed up the road trip booking, and I'm sorry.	-0.377344	0.093686	-0.197802	sad
+I messed up the beach day booking, and I'm sorry.	-0.331610	0.117554	-0.170945	sad
+Sorry, I wasn't able to log the workout in time.	-0.461080	0.090838	-0.178481	sad
+Sorry, I wasn't able to set that alarm in time.	-0.441466	0.102621	-0.124152	sad
+Sorry, I wasn't able to save the draft in time.	-0.464971	0.097714	-0.188148	sad
+Sorry, I wasn't able to send that message in time.	-0.428872	0.060105	-0.098286	sad
+Sorry, I wasn't able to order the filters in time.	-0.501409	0.105197	-0.140753	sad
+Sorry, I wasn't able to start the recording in time.	-0.470086	0.106985	-0.171700	sad
+That one's on me, I mixed up Alex's number.	-0.312102	0.113030	-0.154695	sad
+That one's on me, I mixed up Maya's number.	-0.300852	0.105080	-0.175070	sad
+That one's on me, I mixed up Priya's number.	-0.319522	0.138500	-0.140361	sad
+That one's on me, I mixed up the neighbor's number.	-0.320704	0.114174	-0.117572	sad
+That one's on me, I mixed up Sam's number.	-0.380980	0.100716	-0.156700	sad
+That one's on me, I mixed up Grandma's number.	-0.319008	0.107684	-0.139948	sad
+That one's on me, I mixed up Uncle Ray's number.	-0.324373	0.119044	-0.123167	sad
+That one's on me, I mixed up Jordan's number.	-0.320071	0.095152	-0.170132	sad
+I'm sorry, I can't seem to get garage sensor to respond.	-0.325207	0.063414	-0.179270	sad
+I'm sorry, I can't seem to get doorbell to respond.	-0.335169	0.083144	-0.172316	sad
+I'm sorry, I can't seem to get bedroom lamp to respond.	-0.337717	0.071297	-0.163496	sad
+I'm sorry, I can't seem to get robot vacuum to respond.	-0.307333	0.048463	-0.155832	sad
+I'm sorry, I can't seem to get kitchen display to respond.	-0.350224	0.059801	-0.159136	sad
+I'm sorry, I can't seem to get hallway speaker to respond.	-0.327455	0.062254	-0.173409	sad
+I'm sorry, I can't seem to get thermostat to respond.	-0.305103	0.065566	-0.162055	sad
+I'm sorry, I can't seem to get porch camera to respond.	-0.318843	0.050685	-0.180041	sad
+I'm sorry, I can't seem to get basement hub to respond.	-0.327842	0.064954	-0.169457	sad
+I'm sorry, I can't seem to get office plug to respond.	-0.327038	0.049829	-0.166213	sad
+Unfortunately the road trip has been called off.	-0.463587	0.147620	-0.174024	sad
+Unfortunately the picnic has been called off.	-0.438596	0.146197	-0.158433	sad
+Unfortunately the fishing trip has been called off.	-0.423804	0.146431	-0.151204	sad
+Unfortunately the dinner party has been called off.	-0.423034	0.147717	-0.152931	sad
+Unfortunately the reunion has been called off.	-0.428872	0.149616	-0.152800	sad
+Unfortunately the museum visit has been called off.	-0.408404	0.145788	-0.152643	sad
+Unfortunately the beach day has been called off.	-0.422771	0.156279	-0.151031	sad
+Unfortunately the movie night has been called off.	-0.431219	0.143781	-0.166655	sad
+I have some bad news: the delivery fell through.	-0.469284	0.164223	-0.181213	sad
+I have some bad news: the dinner reservation fell through.	-0.453872	0.146995	-0.159535	sad
+I have some bad news: the appointment fell through.	-0.507315	0.159797	-0.188920	sad
+I have some bad news: the car repair fell through.	-0.483727	0.151363	-0.172883	sad
+I have some bad news: the bank transfer fell through.	-0.475067	0.161019	-0.173671	sad
+I have some bad news: the hotel booking fell through.	-0.483195	0.153888	-0.182341	sad
+I have some bad news: the trip fell through.	-0.408527	0.168597	-0.145595	sad
+I have some bad news: the interview fell through.	-0.473679	0.142012	-0.169673	sad
+The nightly backup crashed and the changes were lost.	-0.386009	0.234671	-0.173547	sad
+The docs build crashed and the changes were lost.	-0.405084	0.230229	-0.184216	sad
+The server patch crashed and the changes were lost.	-0.392543	0.232798	-0.179701	sad
+The CI pipeline crashed and the changes were lost.	-0.412540	0.232807	-0.183279	sad
+The staging deploy crashed and the changes were lost.	-0.396460	0.229684	-0.180520	sad
+The database migration crashed and the changes were lost.	-0.347851	0.225159	-0.164162	sad
+The photo sync crashed and the changes were lost.	-0.386309	0.228922	-0.176615	sad
+The firmware update crashed and the changes were lost.	-0.375101	0.233207	-0.177373	sad
+The test run crashed and the changes were lost.	-0.414136	0.213019	-0.191711	sad
+The release build crashed and the changes were lost.	-0.385061	0.224283	-0.174601	sad
+Sadly, the surprise party won't be happening after all.	-0.342934	0.159676	-0.141083	sad
+Sadly, the puppy won't be happening after all.	-0.442520	0.126892	-0.174197	sad
+Sadly, the new apartment won't be happening after all.	-0.350602	0.168013	-0.130164	sad
+Sadly, the trip won't be happening after all.	-0.480363	0.121682	-0.180936	sad
+Sadly, the concert won't be happening after all.	-0.435065	0.116784	-0.150561	sad
+Sadly, the new bike won't be happening after all.	-0.388574	0.146251	-0.138644	sad
+Sadly, the camping weekend won't be happening after all.	-0.324355	0.149215	-0.134846	sad
+Sadly, the promotion won't be happening after all.	-0.377405	0.136567	-0.155715	sad
+Alex can't make it to the road trip anymore.	-0.390220	0.119409	-0.166842	sad
+Grandma can't make it to the reunion anymore.	-0.374198	0.136399	-0.142717	sad
+Alex can't make it to the museum visit anymore.	-0.339347	0.135046	-0.140689	sad
+Uncle Ray can't make it to the fishing trip anymore.	-0.335726	0.123388	-0.122666	sad
+Maya can't make it to the museum visit anymore.	-0.349849	0.136781	-0.137078	sad
+Priya can't make it to the dinner party anymore.	-0.363497	0.162510	-0.133039	sad
+The neighbor can't make it to the museum visit anymore.	-0.334480	0.140994	-0.128006	sad
+Grandma can't make it to the museum visit anymore.	-0.334442	0.140244	-0.131655	sad
+Sam can't make it to the picnic anymore.	-0.391213	0.127837	-0.162918	sad
+The neighbor can't make it to the reunion anymore.	-0.368945	0.140067	-0.138250	sad
+Grandma can't make it to the fishing trip anymore.	-0.340871	0.135734	-0.121773	sad
+The neighbor can't make it to the dinner party anymore.	-0.355309	0.154147	-0.112304	sad
+Jordan can't make it to the dinner party anymore.	-0.350002	0.156320	-0.123272	sad
+Alex can't make it to the dinner party anymore.	-0.362585	0.149601	-0.123386	sad
+The vet called, and Juniper isn't doing well.	-0.412684	0.148893	-0.163139	sad
+The vet called, and Ziggy isn't doing well.	-0.432360	0.150289	-0.170699	sad
+The vet called, and Hazel isn't doing well.	-0.440100	0.155316	-0.170699	sad
+The vet called, and Mochi isn't doing well.	-0.459881	0.150289	-0.175198	sad
+The vet called, and Biscuit isn't doing well.	-0.398479	0.151684	-0.152835	sad
+The vet called, and Rocket isn't doing well.	-0.445046	0.140462	-0.181899	sad
+The vet called, and Luna isn't doing well.	-0.430996	0.148831	-0.171938	sad
+The vet called, and Otis isn't doing well.	-0.424884	0.164141	-0.177158	sad
+It looks like the vintage camera was broken in the move.	-0.395008	0.141207	-0.149491	sad
+It looks like the hand-knit scarf was broken in the move.	-0.414097	0.150374	-0.158254	sad
+It looks like the old guitar was broken in the move.	-0.443968	0.139473	-0.163303	sad
+It looks like your mom's recipe box was broken in the move.	-0.396937	0.138340	-0.156413	sad
+It looks like the photo album was broken in the move.	-0.421777	0.146031	-0.157965	sad
+It looks like the wedding mug was broken in the move.	-0.419468	0.158886	-0.159116	sad
+I'm sorry about Rocket. I know you two were close.	-0.430104	0.108559	-0.137405	sad
+I'm sorry about Hazel. I know you two were close.	-0.365752	0.128388	-0.125780	sad
+I'm sorry about Otis. I know you two were close.	-0.325294	0.134976	-0.128658	sad
+I'm sorry about Biscuit. I know you two were close.	-0.327196	0.128948	-0.114395	sad
+I'm sorry about Ziggy. I know you two were close.	-0.316940	0.121595	-0.110579	sad
+I'm sorry about Luna. I know you two were close.	-0.337662	0.131534	-0.123420	sad
+I'm sorry about Juniper. I know you two were close.	-0.333538	0.129610	-0.122097	sad
+I'm sorry about Mochi. I know you two were close.	-0.374701	0.137899	-0.133076	sad
+It's hard losing someone like Uncle Ray.	-0.412125	-0.009461	-0.188329	sad
+It's hard losing someone like your cousin.	-0.413776	-0.055408	-0.185802	sad
+It's hard losing someone like Grandpa Joe.	-0.425635	-0.043140	-0.187313	sad
+It's hard losing someone like your godmother.	-0.412964	-0.048395	-0.178598	sad
+It's hard losing someone like your aunt.	-0.357716	-0.052697	-0.174228	sad
+It's hard losing someone like your old neighbor.	-0.421238	-0.042542	-0.168053	sad
+The old guitar reminds you of better days, doesn't it.	-0.419184	-0.026526	-0.166166	sad
+The wedding mug reminds you of better days, doesn't it.	-0.386183	0.004773	-0.162303	sad
+Your mom's recipe box reminds you of better days, doesn't it.	-0.324806	0.009882	-0.136165	sad
+The hand-knit scarf reminds you of better days, doesn't it.	-0.394623	-0.007828	-0.162236	sad
+The photo album reminds you of better days, doesn't it.	-0.396076	-0.016197	-0.160028	sad
+The vintage camera reminds you of better days, doesn't it.	-0.372070	-0.013748	-0.148067	sad
+It must feel quiet around here without Mochi.	-0.382261	-0.073298	-0.164000	sad
+It must feel quiet around here without Otis.	-0.364890	-0.068026	-0.171901	sad
+It must feel quiet around here without Ziggy.	-0.369008	-0.069839	-0.151928	sad
+It must feel quiet around here without Juniper.	-0.351307	-0.075461	-0.166710	sad
+It must feel quiet around here without Biscuit.	-0.349524	-0.076116	-0.139361	sad
+It must feel quiet around here without Rocket.	-0.380174	-0.075509	-0.173520	sad
+It must feel quiet around here without Hazel.	-0.368204	-0.084494	-0.160199	sad
+It must feel quiet around here without Luna.	-0.359010	-0.069429	-0.162484	sad
+I'm here if you want to talk about your aunt.	-0.242966	-0.024627	-0.114117	sad
+I'm here if you want to talk about Uncle Ray.	-0.296204	0.018213	-0.107692	sad
+I'm here if you want to talk about your old neighbor.	-0.320806	-0.019221	-0.111456	sad
+I'm here if you want to talk about your cousin.	-0.312350	-0.031894	-0.127932	sad
+I'm here if you want to talk about Grandpa Joe.	-0.324778	-0.024961	-0.122583	sad
+I'm here if you want to talk about your godmother.	-0.312863	-0.028681	-0.121367	sad
+I really miss Biscuit.	-0.081163	0.197546	0.116674	idle
+I really miss Juniper.	-0.077698	0.189831	0.104590	idle
+I really miss Otis.	-0.066710	0.208190	0.103070	idle
+I really miss Mochi.	-0.145500	0.211529	0.095462	plain
+I really miss Luna.	-0.088142	0.198715	0.113435	idle
+I really miss Hazel.	-0.118609	0.209488	0.108252	plain
+I really miss Ziggy.	-0.045271	0.199281	0.134744	idle
+I really miss Rocket.	-0.209135	0.155246	0.073282	sad
+The museum visit got cancelled and I was looking forward to it.	-0.364867	0.172701	-0.173821	sad
+The dinner party got cancelled and I was looking forward to it.	-0.374471	0.166907	-0.175478	sad
+The beach day got cancelled and I was looking forward to it.	-0.370598	0.185308	-0.171162	sad
+The road trip got cancelled and I was looking forward to it.	-0.412535	0.169949	-0.197006	sad
+The picnic got cancelled and I was looking forward to it.	-0.389399	0.165934	-0.178051	sad
+The fishing trip got cancelled and I was looking forward to it.	-0.371745	0.164007	-0.169511	sad
+The movie night got cancelled and I was looking forward to it.	-0.386668	0.167129	-0.190051	sad
+The reunion got cancelled and I was looking forward to it.	-0.378465	0.171949	-0.173381	sad
+I've been feeling pretty low since your old neighbor moved away.	-0.445843	-0.037591	-0.180437	sad

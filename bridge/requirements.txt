@@ -1,0 +1,5 @@
+# core (bridge host: brew install opus python@3.12). numpy and opuslib are gone: dsp.c (cc, built by
+# `python dsp.py build`) and opus.py (libopus via ctypes) cover the slices the bridge used.
+aiohttp>=3.9
+# tests
+pytest>=8

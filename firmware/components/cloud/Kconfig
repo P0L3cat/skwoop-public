@@ -1,0 +1,69 @@
+menu "Skwoop direct cloud (standalone)"
+    depends on SKWOOP_STANDALONE
+
+    config SKWOOP_CLOUD_STT_BASE
+        string "STT base URL (OpenAI-compatible, POST {base}/audio/transcriptions)"
+        default "https://api.openai.com/v1"
+
+    config SKWOOP_CLOUD_STT_MODEL
+        string "STT model"
+        default "whisper-1"
+
+    config SKWOOP_CLOUD_STT_KEY
+        string "Key slot in encrypted NVS for STT"
+        default "openai"
+
+    config SKWOOP_CLOUD_LLM_BASE
+        string "Chat base URL (OpenAI-compatible); the stored provider base overrides it"
+        default "https://api.openai.com/v1"
+
+    config SKWOOP_CLOUD_LLM_MODEL
+        string "Chat model"
+        default "gpt-4o-mini"
+        help
+            Sent as "model" on the chat call. The default is gpt-4o-mini.
+
+    config SKWOOP_CLOUD_LLM_KEY
+        string "Key slot in encrypted NVS for chat"
+        default "openai"
+
+    choice SKWOOP_CLOUD_TTS
+        prompt "TTS provider"
+        default SKWOOP_CLOUD_TTS_OPENAI
+
+        config SKWOOP_CLOUD_TTS_OPENAI
+            bool "OpenAI-compatible /audio/speech (pcm 24 kHz)"
+
+        config SKWOOP_CLOUD_TTS_ELEVENLABS
+            bool "ElevenLabs /v1/text-to-speech (pcm_24000)"
+    endchoice
+
+    config SKWOOP_CLOUD_TTS_BASE
+        string "TTS base URL"
+        default "https://api.elevenlabs.io" if SKWOOP_CLOUD_TTS_ELEVENLABS
+        default "https://api.openai.com/v1"
+
+    config SKWOOP_CLOUD_TTS_MODEL
+        string "TTS model"
+        default "eleven_flash_v2_5" if SKWOOP_CLOUD_TTS_ELEVENLABS
+        default "tts-1"
+        help
+            OpenAI speech model for POST /audio/speech. tts-1 is a documented
+            Audio API id (tts-1-hd is the higher-quality option). ElevenLabs
+            uses its own model id when that provider is selected.
+
+    config SKWOOP_CLOUD_TTS_VOICE
+        string "TTS voice"
+        default "your-voice-id" if SKWOOP_CLOUD_TTS_ELEVENLABS
+        default "alloy"
+        help
+            OpenAI-compatible voices use a public name such as alloy.
+            For ElevenLabs this is a voice id. The default is a placeholder;
+            set yours in menuconfig. Do not commit a real voice id.
+
+    config SKWOOP_CLOUD_TTS_KEY
+        string "Key slot in encrypted NVS for TTS"
+        default "elevenlabs" if SKWOOP_CLOUD_TTS_ELEVENLABS
+        default "openai"
+
+endmenu

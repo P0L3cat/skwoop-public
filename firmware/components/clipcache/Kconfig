@@ -1,0 +1,8 @@
+menu "Skwoop clip cache"
+
+    config SKWOOP_CLIP_CACHE_KB
+        int "Clip cache cap on the storage partition (KB)"
+        range 64 12288
+        default 4096
+
+endmenu

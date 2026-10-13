@@ -1,0 +1,78 @@
+{
+  "intents": [
+    {
+      "id": "endpoint_grokbot",
+      "script": null,
+      "ack": "Grokbot.",
+      "any": ["switch to grokbot", "talk to grokbot", "use grokbot", "hey grokbot"]
+    },
+    {
+      "id": "endpoint_skwoop",
+      "script": null,
+      "ack": "Skwoop.",
+      "any": ["switch to skwoop", "talk to skwoop", "use skwoop", "hey skwoop", "back to skwoop"]
+    },
+    {
+      "id": "living_on",
+      "script": "script.pod_living_on",
+      "ack": "Got it.",
+      "any": ["turn on the lights", "lights on", "turn on the lamp", "turn on the trumpet", "trumpet on", "living room light on",
+              "turn on the living room light", "living room lights on"]
+    },
+    {
+      "id": "living_off",
+      "script": "script.pod_living_off",
+      "ack": "Done.",
+      "any": ["turn off the lights", "lights off", "turn off the lamp", "turn off the trumpet", "trumpet off", "kill the lights",
+              "turn off the living room light", "living room light off", "living room lights off"]
+    },
+    {
+      "id": "bedroom_on",
+      "script": "script.pod_bedroom_on",
+      "ack": "Got it.",
+      "any": ["turn on the bedroom light", "bedroom light on", "bedroom on"]
+    },
+    {
+      "id": "bedroom_off",
+      "script": "script.pod_bedroom_off",
+      "ack": "Done.",
+      "any": ["turn off the bedroom light", "bedroom light off", "bedroom off"]
+    },
+    {
+      "id": "tv_pause",
+      "script": "script.pod_tv_pause",
+      "ack": "Paused.",
+      "any": ["pause the tv", "pause apple tv", "pause the apple tv"]
+    },
+    {
+      "id": "tv_press_play",
+      "script": "script.pod_tv_press_play",
+      "ack": "Playing.",
+      "any": ["press play", "hit play", "just play"]
+    },
+    {
+      "id": "tv_play",
+      "script": "script.pod_tv_play",
+      "ack": "Playing.",
+      "any": ["play the tv", "unpause the tv", "resume the tv", "play apple tv"]
+    },
+    {
+      "id": "tv_home",
+      "script": "script.pod_tv_home",
+      "ack": "Home.",
+      "any": ["apple tv home", "tv home screen", "go home on the tv"]
+    },
+    {
+      "id": "tv_off",
+      "script": "script.pod_tv_off",
+      "ack": "Done.",
+      "any": ["turn off the tv", "turn off apple tv", "apple tv off", "sleep the tv"]
+    },
+    {
+      "id": "tv_on",
+      "script": "script.pod_tv_on",
+      "ack": "Got it.",
+      "any": ["turn on the tv", "wake the tv", "wake apple tv", "turn on apple tv"]
+    }
+  ]
+}

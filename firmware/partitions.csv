@@ -1,0 +1,11 @@
+# Name,   Type, SubType, Offset,   Size,     Flags
+# 32 MB quad flash. Anything the CPU maps through cache (apps, esp-sr models)
+# stays below 16 MB; storage above 16 MB is reached with 4-byte-address reads.
+nvs,      data, nvs,     0xa000,   0x6000
+nvs_keys, data, nvs_keys,0x10000,  0x1000,   encrypted
+phy_init, data, phy,     0x11000,  0x1000
+otadata,  data, ota,     0x12000,  0x2000
+ota_0,    app,  ota_0,   0x20000,  0x400000
+ota_1,    app,  ota_1,   0x420000, 0x400000
+model,    data, spiffs,  0x820000, 0x7E0000
+storage,  data, fat,     0x1000000,0x1000000

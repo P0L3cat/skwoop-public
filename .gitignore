@@ -1,0 +1,27 @@
+.env
+secrets/
+*.log
+bridge/_dsp.so
+*.so
+*.dylib
+
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.so
+*.npz
+*.wav
+
+# ESP-IDF
+build/
+managed_components/
+sdkconfig
+sdkconfig.old
+
+# Mood weights are distributed separately (CC-BY-SA), not in this tree.
+firmware/components/mood/*.bin
+.pytest_cache/
+.ruff_cache/
+__pycache__/

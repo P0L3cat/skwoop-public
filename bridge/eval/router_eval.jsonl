@@ -1,0 +1,65 @@
+{"id": 1, "text": "What's the weather like right now?", "tier": "instant", "expect": "quick-WeatherAsk", "live": true, "note": ""}
+{"id": 2, "text": "What's the temperature outside?", "tier": "instant", "expect": "quick-WeatherAsk", "live": true, "note": ""}
+{"id": 3, "text": "What time is it?", "tier": "instant", "expect": "quick-TimeAsk", "live": true, "note": ""}
+{"id": 4, "text": "What's today's date?", "tier": "instant", "expect": "quick-DayAsk", "live": true, "note": ""}
+{"id": 5, "text": "What day is it?", "tier": "instant", "expect": "quick-DayAsk", "live": true, "note": ""}
+{"id": 6, "text": "Set a timer for ten minutes.", "tier": "instant", "expect": "quick-TimerSet", "live": false, "note": ""}
+{"id": 7, "text": "Set a timer for the pasta, twelve minutes.", "tier": "instant", "expect": "quick-TimerSet", "live": false, "note": "duration not right after 'for'"}
+{"id": 8, "text": "How much time is left on the timer?", "tier": "instant", "expect": "quick-TimerLeft", "live": true, "note": ""}
+{"id": 9, "text": "Cancel the timer.", "tier": "instant", "expect": "quick-TimerCancel", "live": false, "note": ""}
+{"id": 10, "text": "Set a timer.", "tier": "instant", "expect": "quick-TimerHowLong", "live": false, "note": "asks how long"}
+{"id": 11, "text": "Turn on the lights.", "tier": "instant", "expect": "script-living_on", "live": false, "note": ""}
+{"id": 12, "text": "Lights off.", "tier": "instant", "expect": "script-living_off", "live": false, "note": ""}
+{"id": 13, "text": "Turn off the bedroom light.", "tier": "instant", "expect": "script-bedroom_off", "live": false, "note": ""}
+{"id": 14, "text": "Pause the TV.", "tier": "instant", "expect": "script-tv_pause", "live": false, "note": ""}
+{"id": 15, "text": "Can you turn on the TV?", "tier": "instant", "expect": "script-tv_on", "live": false, "note": "polite command, not a question"}
+{"id": 16, "text": "Play Severance on TV.", "tier": "instant", "expect": "script-tv_play_show", "live": false, "note": ""}
+{"id": 17, "text": "Tell me something fun about crows.", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 18, "text": "Tell me a joke.", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 19, "text": "What's fifteen percent of eighty?", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 20, "text": "Good morning!", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 21, "text": "How far away is the moon?", "tier": "fast", "expect": "chat", "live": false, "note": "static fact"}
+{"id": 22, "text": "What's the capital of Australia?", "tier": "fast", "expect": "chat", "live": false, "note": "static fact"}
+{"id": 23, "text": "Thanks, that's all.", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 24, "text": "What can you do?", "tier": "fast", "expect": "chat", "live": false, "note": ""}
+{"id": 25, "text": "What time is it in Tokyo?", "tier": "fast", "expect": "chat", "live": false, "note": "TRICKY: not the local-clock template; computed from local time"}
+{"id": 26, "text": "Is the bedroom light on?", "tier": "fast", "expect": "snapshot", "live": true, "note": "TRICKY: contains 'bedroom light on' - must not switch it on"}
+{"id": 27, "text": "Are the lights on?", "tier": "fast", "expect": "snapshot", "live": true, "note": "TRICKY: contains 'lights on' - must not switch them on"}
+{"id": 28, "text": "Is the TV on?", "tier": "fast", "expect": "snapshot", "live": true, "note": "TRICKY: contains 'turn on the tv'? no - but 'tv on'"}
+{"id": 29, "text": "Is Mel home?", "tier": "fast", "expect": "snapshot", "live": true, "note": ""}
+{"id": 30, "text": "Is the internet working?", "tier": "fast", "expect": "snapshot", "live": true, "note": "Starlink connectivity"}
+{"id": 31, "text": "When is sunset?", "tier": "fast", "expect": "snapshot", "live": true, "note": "quick excludes sunset"}
+{"id": 32, "text": "Dim the living room light to thirty percent.", "tier": "fast", "expect": "lights", "live": false, "note": ""}
+{"id": 33, "text": "Make the lamp purple.", "tier": "fast", "expect": "lights", "live": false, "note": ""}
+{"id": 34, "text": "Turn on the lights and set a timer for five minutes.", "tier": "fast", "expect": "lights+timer", "live": false, "note": "TRICKY: compound - a keyword hit would drop the timer"}
+{"id": 35, "text": "Don't turn on the lights.", "tier": "fast", "expect": "chat", "live": false, "note": "TRICKY: negation - must not switch them on"}
+{"id": 36, "text": "What's the forecast for tomorrow?", "tier": "fast", "expect": "forecast", "live": true, "note": ""}
+{"id": 37, "text": "Will it rain this weekend?", "tier": "fast", "expect": "forecast", "live": true, "note": ""}
+{"id": 38, "text": "Should I bring an umbrella tomorrow?", "tier": "fast", "expect": "forecast", "live": true, "note": ""}
+{"id": 39, "text": "What's the weather in Chicago?", "tier": "fast", "expect": "web_search", "live": true, "note": "TRICKY: elsewhere - not the home template"}
+{"id": 40, "text": "What's on my calendar today?", "tier": "fast", "expect": "calendar", "live": true, "note": "one Home Assistant read"}
+{"id": 41, "text": "Do I have anything tomorrow morning?", "tier": "fast", "expect": "calendar", "live": true, "note": ""}
+{"id": 42, "text": "Add milk to the shopping list.", "tier": "fast", "expect": "todo", "live": false, "note": ""}
+{"id": 43, "text": "What's on my shopping list?", "tier": "fast", "expect": "todo", "live": true, "note": ""}
+{"id": 44, "text": "Text Mom that I'll call her tonight.", "tier": "fast", "expect": "send_text", "live": false, "note": "asks to confirm"}
+{"id": 45, "text": "Text Mel I'm on my way.", "tier": "fast", "expect": "send_text", "live": false, "note": "TRICKY: Mel is not in family_contacts.yaml - must not guess a number"}
+{"id": 46, "text": "Can you check what the bots are working on?", "tier": "fast", "expect": "bot_status", "live": true, "note": "THE MISROUTE: got a made-up 'quiet' answer"}
+{"id": 47, "text": "Is Deep running?", "tier": "fast", "expect": "bot_status", "live": true, "note": ""}
+{"id": 48, "text": "Are any of the bots stuck?", "tier": "fast", "expect": "bot_status", "live": true, "note": ""}
+{"id": 49, "text": "Who won the Super Bowl this year?", "tier": "fast", "expect": "web_search", "live": true, "note": "live fact"}
+{"id": 50, "text": "What's the price of bitcoin right now?", "tier": "fast", "expect": "web_search", "live": true, "note": "live fact"}
+{"id": 51, "text": "Is Costco open right now?", "tier": "fast", "expect": "web_search", "live": true, "note": "live fact"}
+{"id": 52, "text": "What's the latest news about SpaceX?", "tier": "fast", "expect": "web_search", "live": true, "note": "live fact"}
+{"id": 53, "text": "Who is the president of France?", "tier": "fast", "expect": "web_search", "live": true, "note": "TRICKY: sounds static, can change"}
+{"id": 54, "text": "Check my email for anything from the school.", "tier": "fast", "expect": "decline", "live": true, "note": "no email tool in Skwoop's set: say so, no guess, no Deep trip"}
+{"id": 55, "text": "Play some music.", "tier": "deep", "expect": "spotify", "live": false, "note": "Oct 4: music is Spotify on the PC through Deep"}
+{"id": 56, "text": "What's in my notes about the dishwasher?", "tier": "deep", "expect": "file", "live": true, "note": ""}
+{"id": 57, "text": "Find the PDF about the school forms and tell me the deadline.", "tier": "deep", "expect": "file", "live": true, "note": ""}
+{"id": 58, "text": "Write a note that the car needs an oil change.", "tier": "deep", "expect": "file", "live": false, "note": "doc management"}
+{"id": 59, "text": "Remember that the plumber comes Tuesday at nine.", "tier": "deep", "expect": "memory", "live": false, "note": ""}
+{"id": 60, "text": "What did I tell you about the plumber?", "tier": "deep", "expect": "memory", "live": true, "note": ""}
+{"id": 61, "text": "Research the best robot vacuum under three hundred dollars and compare the top three.", "tier": "deep", "expect": "web", "live": true, "note": ""}
+{"id": 62, "text": "Summarize the latest Home Assistant release notes.", "tier": "deep", "expect": "web", "live": true, "note": "page extract"}
+{"id": 63, "text": "Plan a dinner menu for Saturday and add the ingredients to the shopping list.", "tier": "deep", "expect": "multi", "live": false, "note": ""}
+{"id": 64, "text": "Look at the Starlink power use and tell me if anything looks unusual.", "tier": "deep", "expect": "homeassistant", "live": true, "note": "analysis over history"}
+{"id": 65, "text": "Find a good chicken tikka recipe and save it to my notes.", "tier": "deep", "expect": "web+file", "live": true, "note": ""}

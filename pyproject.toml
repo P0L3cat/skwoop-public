@@ -1,0 +1,21 @@
+[project]
+name = "skwoop"
+version = "0.0.0"
+requires-python = ">=3.11"
+description = "Skwoop bridge: the host service for the pod."
+
+[tool.pytest.ini_options]
+pythonpath = ["bridge", "tools"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "UP", "ANN401", "PGH003"]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+follow_imports = "silent"
+files = ["tests/bridge/webpod_smoke.py", "tests/bridge/test_roundtrip.py"]

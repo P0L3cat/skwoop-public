@@ -1,0 +1,397 @@
+{
+  "voice": "example",
+  "model": "eleven_v4_turbo",
+  "rate": 24000,
+  "lufs": -20,
+  "join": "stitch.join(profile='overlap') for b2 pieces; whole/line clips play as they are",
+  "templates": {
+    "room_on": {
+      "tier": 1,
+      "sentence": "Okay, the {room} lights are on.",
+      "moods": [
+        "happy",
+        "idle"
+      ],
+      "mode": "whole"
+    },
+    "tv_title": {
+      "tier": 4,
+      "sentence": "Putting on {title}.",
+      "moods": [
+        "happy",
+        "idle"
+      ],
+      "mode": "whole"
+    },
+    "text_start": {
+      "tier": 3,
+      "sentence": "Okay, a text to {name}.",
+      "moods": [
+        "happy",
+        "idle"
+      ],
+      "mode": "whole"
+    },
+    "battery": {
+      "tier": 5,
+      "sentence": "My battery is at {pct}.",
+      "moods": [
+        "idle",
+        "sad"
+      ],
+      "mode": "whole"
+    },
+    "weather_now": {
+      "tier": 5,
+      "sentence": "Right now it's {temp} and {wx}.",
+      "moods": [
+        "happy",
+        "idle"
+      ],
+      "mode": "b2"
+    },
+    "text_readback": {
+      "tier": 3,
+      "sentence": "Here's your text to {name}.",
+      "moods": [
+        "idle"
+      ],
+      "mode": "whole"
+    },
+    "text_new": {
+      "tier": 3,
+      "sentence": "New text from {name}.",
+      "moods": [
+        "happy",
+        "idle"
+      ],
+      "mode": "whole"
+    }
+  },
+  "whole": {
+    "room_on|happy|{\"room\": \"kitchen\"}": "fe1db3fbc027",
+    "room_on|idle|{\"room\": \"kitchen\"}": "09dbe51ce07a",
+    "tv_title|happy|{\"title\": \"The Blacklist\"}": "c7b681b84ecd",
+    "tv_title|idle|{\"title\": \"The Blacklist\"}": "001ef94cf23e",
+    "text_start|happy|{\"name\": \"Mel\"}": "767a5442a3e2",
+    "text_start|idle|{\"name\": \"Mel\"}": "45f648972fb3",
+    "battery|idle|{\"pct\": \"thirty-four percent\"}": "04441a2ada49",
+    "battery|sad|{\"pct\": \"thirty-four percent\"}": "8d229f9584ee",
+    "text_readback|idle|{\"name\": \"Mel\"}": "d6872f8dd28a",
+    "text_new|happy|{\"name\": \"Mel\"}": "c0a69a9886b3",
+    "text_new|idle|{\"name\": \"Mel\"}": "19c3b80fd91d"
+  },
+  "slots": {
+    "temp|it's|and|idle|seventy-two degrees": "44f0e87875b0",
+    "temp|it's|and|happy|seventy-two degrees": "fc5d64e2af7d",
+    "wx|and|None|happy|sunny": "c05c14041ffa",
+    "wx|and|None|idle|sunny": "ce06f4042e40"
+  },
+  "carriers": {
+    "weather_now|0|happy": "c863328027b0",
+    "weather_now|0|idle": "cf375fb0a852"
+  },
+  "lines": {
+    "ack|idle": [
+      {
+        "text": "Okay.",
+        "id": "19b79db458c9"
+      }
+    ],
+    "ack|happy": [
+      {
+        "text": "Okay.",
+        "id": "841a3768edcf"
+      }
+    ],
+    "tv_ok|happy": [
+      {
+        "text": "Netflix is up. You'll have to pick it from there.",
+        "id": "f13103672abe"
+      },
+      {
+        "text": "Playing.",
+        "id": "9ee9927f19a7"
+      }
+    ],
+    "tv_ok|idle": [
+      {
+        "text": "Netflix is up. You'll have to pick it from there.",
+        "id": "f32a58c0b9d4"
+      },
+      {
+        "text": "Playing.",
+        "id": "7d56b3cf99e2"
+      }
+    ],
+    "greet_night|calm": [
+      {
+        "text": "Good night!",
+        "id": "42b7bd2729ed"
+      }
+    ],
+    "greet_night|idle": [
+      {
+        "text": "Good night!",
+        "id": "b1a374b372a1"
+      }
+    ],
+    "text_ok|idle": [
+      {
+        "text": "Should I send it?",
+        "id": "d968c991c86b"
+      }
+    ],
+    "text_ok|happy": [
+      {
+        "text": "Should I send it?",
+        "id": "254be002e34f"
+      }
+    ]
+  },
+  "clips": {
+    "45f648972fb3": {
+      "file": "clips/45f648972fb3.wav",
+      "text": "Okay, a text to Mel.",
+      "mood": "idle",
+      "mode": "whole",
+      "tier": 3,
+      "ol": null,
+      "or": null
+    },
+    "04441a2ada49": {
+      "file": "clips/04441a2ada49.wav",
+      "text": "My battery is at thirty-four percent.",
+      "mood": "idle",
+      "mode": "whole",
+      "tier": 5,
+      "ol": null,
+      "or": null
+    },
+    "42b7bd2729ed": {
+      "file": "clips/42b7bd2729ed.wav",
+      "text": "Good night!",
+      "mood": "calm",
+      "mode": "line",
+      "tier": 5,
+      "ol": null,
+      "or": null
+    },
+    "ce06f4042e40": {
+      "file": "clips/ce06f4042e40.wav",
+      "text": "and sunny.",
+      "mood": "idle",
+      "mode": "slot",
+      "tier": 5,
+      "ol": "and",
+      "or": null
+    },
+    "c05c14041ffa": {
+      "file": "clips/c05c14041ffa.wav",
+      "text": "and sunny.",
+      "mood": "happy",
+      "mode": "slot",
+      "tier": 5,
+      "ol": "and",
+      "or": null
+    },
+    "cf375fb0a852": {
+      "file": "clips/cf375fb0a852.wav",
+      "text": "Right now it's sixty degrees",
+      "mood": "idle",
+      "mode": "carrier",
+      "tier": 5,
+      "ol": null,
+      "or": "it's"
+    },
+    "f13103672abe": {
+      "file": "clips/f13103672abe.wav",
+      "text": "Netflix is up. You'll have to pick it from there.",
+      "mood": "happy",
+      "mode": "line",
+      "tier": 4,
+      "ol": null,
+      "or": null
+    },
+    "001ef94cf23e": {
+      "file": "clips/001ef94cf23e.wav",
+      "text": "Putting on The Blacklist.",
+      "mood": "idle",
+      "mode": "whole",
+      "tier": 4,
+      "ol": null,
+      "or": null
+    },
+    "c0a69a9886b3": {
+      "file": "clips/c0a69a9886b3.wav",
+      "text": "New text from Mel.",
+      "mood": "happy",
+      "mode": "whole",
+      "tier": 3,
+      "ol": null,
+      "or": null
+    },
+    "767a5442a3e2": {
+      "file": "clips/767a5442a3e2.wav",
+      "text": "Okay, a text to Mel.",
+      "mood": "happy",
+      "mode": "whole",
+      "tier": 3,
+      "ol": null,
+      "or": null
+    },
+    "19c3b80fd91d": {
+      "file": "clips/19c3b80fd91d.wav",
+      "text": "New text from Mel.",
+      "mood": "idle",
+      "mode": "whole",
+      "tier": 3,
+      "ol": null,
+      "or": null
+    },
+    "44f0e87875b0": {
+      "file": "clips/44f0e87875b0.wav",
+      "text": "it's seventy-two degrees and",
+      "mood": "idle",
+      "mode": "slot",
+      "tier": 5,
+      "ol": "it's",
+      "or": "and"
+    },
+    "fe1db3fbc027": {
+      "file": "clips/fe1db3fbc027.wav",
+      "text": "Okay, the kitchen lights are on.",
+      "mood": "happy",
+      "mode": "whole",
+      "tier": 1,
+      "ol": null,
+      "or": null
+    },
+    "09dbe51ce07a": {
+      "file": "clips/09dbe51ce07a.wav",
+      "text": "Okay, the kitchen lights are on.",
+      "mood": "idle",
+      "mode": "whole",
+      "tier": 1,
+      "ol": null,
+      "or": null
+    },
+    "b1a374b372a1": {
+      "file": "clips/b1a374b372a1.wav",
+      "text": "Good night!",
+      "mood": "idle",
+      "mode": "line",
+      "tier": 5,
+      "ol": null,
+      "or": null
+    },
+    "f32a58c0b9d4": {
+      "file": "clips/f32a58c0b9d4.wav",
+      "text": "Netflix is up. You'll have to pick it from there.",
+      "mood": "idle",
+      "mode": "line",
+      "tier": 4,
+      "ol": null,
+      "or": null
+    },
+    "8d229f9584ee": {
+      "file": "clips/8d229f9584ee.wav",
+      "text": "My battery is at thirty-four percent.",
+      "mood": "sad",
+      "mode": "whole",
+      "tier": 5,
+      "ol": null,
+      "or": null
+    },
+    "841a3768edcf": {
+      "file": "clips/841a3768edcf.wav",
+      "text": "Okay.",
+      "mood": "happy",
+      "mode": "line",
+      "tier": 1,
+      "ol": null,
+      "or": null
+    },
+    "19b79db458c9": {
+      "file": "clips/19b79db458c9.wav",
+      "text": "Okay.",
+      "mood": "idle",
+      "mode": "line",
+      "tier": 1,
+      "ol": null,
+      "or": null
+    },
+    "fc5d64e2af7d": {
+      "file": "clips/fc5d64e2af7d.wav",
+      "text": "it's seventy-two degrees and",
+      "mood": "happy",
+      "mode": "slot",
+      "tier": 5,
+      "ol": "it's",
+      "or": "and"
+    },
+    "d968c991c86b": {
+      "file": "clips/d968c991c86b.wav",
+      "text": "Should I send it?",
+      "mood": "idle",
+      "mode": "line",
+      "tier": 3,
+      "ol": null,
+      "or": null
+    },
+    "c7b681b84ecd": {
+      "file": "clips/c7b681b84ecd.wav",
+      "text": "Putting on The Blacklist.",
+      "mood": "happy",
+      "mode": "whole",
+      "tier": 4,
+      "ol": null,
+      "or": null
+    },
+    "9ee9927f19a7": {
+      "file": "clips/9ee9927f19a7.wav",
+      "text": "Playing.",
+      "mood": "happy",
+      "mode": "line",
+      "tier": 4,
+      "ol": null,
+      "or": null
+    },
+    "254be002e34f": {
+      "file": "clips/254be002e34f.wav",
+      "text": "Should I send it?",
+      "mood": "happy",
+      "mode": "line",
+      "tier": 3,
+      "ol": null,
+      "or": null
+    },
+    "7d56b3cf99e2": {
+      "file": "clips/7d56b3cf99e2.wav",
+      "text": "Playing.",
+      "mood": "idle",
+      "mode": "line",
+      "tier": 4,
+      "ol": null,
+      "or": null
+    },
+    "c863328027b0": {
+      "file": "clips/c863328027b0.wav",
+      "text": "Right now it's sixty degrees",
+      "mood": "happy",
+      "mode": "carrier",
+      "tier": 5,
+      "ol": null,
+      "or": "it's"
+    },
+    "d6872f8dd28a": {
+      "file": "clips/d6872f8dd28a.wav",
+      "text": "Here's your text to Mel.",
+      "mood": "idle",
+      "mode": "whole",
+      "tier": 3,
+      "ol": null,
+      "or": null
+    }
+  }
+}

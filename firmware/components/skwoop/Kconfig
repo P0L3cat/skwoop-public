@@ -1,0 +1,32 @@
+menu "Skwoop"
+
+    config SKWOOP_STANDALONE
+        bool "Skwoop standalone modules (harness, BM25 memory, clips)"
+        default n
+
+    config SKWOOP_BRIDGE_HOST
+        string "Bridge host"
+        default "bridge.example"
+        help
+            Hostname of the bridge host. The pod requests
+            http://<host>:<port>/xiaozhi/ota/. Example value; set the
+            real host in menuconfig.
+
+    config SKWOOP_BRIDGE_PORT
+        int "Bridge port"
+        range 1 65535
+        default 8003
+        help
+            TCP port of the bridge host. Example value.
+
+    config SKWOOP_AP_SSID_PREFIX
+        string "Provisioning AP SSID prefix"
+        default "skwoop"
+        help
+            While provisioning, the softAP name is "<prefix>-" plus the
+            last two MAC bytes (for example skwoop-1a2b). Keep the prefix
+            at most 26 characters. Example only, not a home network name.
+
+    comment "Mood weights are optional. If components/mood/mood_v11.bin is missing, mood is disabled. Generate it with tools/export_mood.py."
+
+endmenu
